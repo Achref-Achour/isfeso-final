@@ -1,0 +1,65 @@
+{% extends ('layout/frontlayout.html.twig') %}
+   {% block body %} 
+    <section class="inner-header divider parallax layer-overlay overlay-dark-5" data-bg-img="images/bg/bg3.jpg"             style="background-image: url(&quot;images/bg/bg3.jpg&quot;); background-position: 50% 97px;">
+    <div class="container pt-70 pb-20">
+        <!-- Section Content -->
+        <div class="section-content">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 text-center">
+                    <h2 class="text-white mt-20">OEFS</h2>
+                </div>
+            </div>
+        </div>
+    </div>      
+    </section>
+
+    <section class="">
+      <div class="container">
+        <div class="section-content">
+          <div class="row">
+            <div class="col-md-6">
+              <h6 class="letter-space-4 text-gray-darkgray text-uppercase mt-0 mb-0">A propos</h6>
+              <h2 class="text-uppercase font-weight-600 mt-0 font-28 line-bottom">C'est quoi l'OEFS ?</h2>
+              <h4 class="text-theme-colored">L'Orthodontie Esthétique Fonctionnelle du Sourire©</h4>
+              <p style="text-align:justify">L’Orthodontie Esthétique Fonctionnelle du Sourire© est née en 2009 et est le fruit de 12 ans de pratique avec plus de 10 000 patients traités, des centaines de conférences assistées et données dans le monde. En se mettant au service de l’esthétique du sourire, du visage, des appareillages tout en respectant les fonctions oro-faciales, l’orthodontie devient alors esthétique et fonctionnelle. Le sourire étant riche d’informations sur la position des dents et des machoires, son étude a abouti à l’OEFS©.<br>L’OEFS© est basée sur une consultation, un diagnostic, des propositions de traitement ou de changement, un choix d’appareillage, leur esthétique, un suivi et un maintien du sourire sur consentement éclairé du patient, sans oublier les outils B And Smile®
+              </p>
+            </div>
+            <div class="col-md-6">
+              <div class="video-popup">                
+                <a href="https://www.youtube.com/watch?v=VUxZ5vgO6eI" data-lightbox-gallery="youtube-video" title="Lecture">
+                  <img alt="" src="{{asset('images/play-isfeso.png') }}" class="img-responsive img-fullwidth">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/valu0D0YTl4" allowfullscreen></iframe>
+          </div>
+              {# <iframe width="1280" height="672" src="https://www.youtube.com/embed/valu0D0YTl4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> #}
+        <div class="col-md-12">
+          <div id="accordion1" class="panel-group accordion">
+            <div class="panel">
+              <div class="panel-title"> <a class="collapsed" data-parent="#accordion1" data-toggle="collapse" href="#accordion11" aria-expanded="false"> <span class="open-sub"></span> Evolution du sourire dans l’orthodontie</a> </div>
+              <div id="accordion11" class="panel-collapse collapse" role="tablist" aria-expanded="false" style="height: 0px;">
+                <div class="panel-content">
+                    <p>À ses débuts l’Orthopédie Dento-Faciale se disait « fonctionnelle », par ses limites de déplacement contrôlé des dents. Avec l’apparition des « bagues », nous sommes arrivés à une « orthodontie mécaniste », où règne la « biomécanique du déplacement dentaire », par calcul des forces et des couples pour « forcer » l’emboîtement et l’alignement des dents, quitte à modifier la position des lèvres et du visage, afin de donner la priorité à la mastication. Aujourd’hui, avec l’évolution des moyens thérapeutiques, les nouveaux systèmes d’application des forces et la variété des auxiliaires de traitement, le développement de l’image, l’orthodontie doit se baser sur des règles esthétiques précises, afin d’informer et de respecter l’esthétique de nos patients, le tout associé à un équilibre fonctionnel pour respecter la nature.</p>
+                </div>
+              </div>
+            </div>
+          <div class="panel">
+            <div class="panel-title"> <a data-parent="#accordion1" data-toggle="collapse" href="#accordion12" class="collapsed" aria-expanded="false"> <span class="open-sub"></span> Les fonctions au service du sourire</a> </div>
+              <div id="accordion12" class="panel-collapse collapse" role="tablist" aria-expanded="false" style="height: 0px;">
+                <div class="panel-content">
+                    <p>Le visage est le centre vital des fonctions de nutrition de l’organisme qui s’exercent à travers la bouche et le nez, pour l’oxygénation et la nutrition, grâce à l’os et aux muscles qui y sont insérés. Un visage équilibré est un visage où les fonctions s’exercent sans effort et sans contraction à partir d’une position de repos. Ainsi, le visage au repos, où toutes les fonctions s’expriment sans contraintes, est « individuellement beau ». C’est donc le point de départ idéal du sourire et de l’esthétique des dents et de l’espace buccal.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+            <center>
+              <a class="btn btn-theme-colored btn-flat btn-lg mt-10 mb-sm-30" href="https://www.youtube.com/user/Paloma1203bis" target"_blank">Visitez la chaîne</a>
+            </center>
+          </div>
+        </div>
+      </div>
+    </section>
+   {% endblock %}

@@ -1,0 +1,63 @@
+{% extends ('layout/frontlayout.html.twig') %}
+   {% block body %} 
+    <section class="inner-header divider parallax layer-overlay overlay-dark-5" data-bg-img="images/bg/bg3.jpg" style="background-image: url(&quot;images/bg/bg3.jpg&quot;); background-position: 50% 97px;">
+    <div class="container pt-70 pb-20">
+        <!-- Section Content -->
+        <div class="section-content">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center">
+            <h2 class="text-white mt-20">Dents En Avant</h2>
+            </div>
+        </div>
+        </div>
+    </div>      
+    </section>
+
+    <section class="">
+      <div class="container">
+        <div class="section-content">
+          <div class="row">
+            <div class="col-md-6">
+              <h6 class="letter-space-4 text-gray-darkgray text-uppercase mt-0 mb-0">A propos</h6>
+              <h2 class="text-uppercase font-weight-600 mt-0 font-28 line-bottom">Comprendre le cas : Dents En Avant</h2>
+              <p>Les deux mâchoires doivent être symétriques et cordonnées. Si elle sont décalées, si les dents ne se touchent pas, ou se touchent mal quand la bouche est fermée, le patient aura des difficultés à mastiquer.<br>Et, comme les dents ne sont pas en bonne position, elles sont plus fragiles, plus enclines à se dechausser, plus rapidement usées. Un enfant qui a les dents trés en avant risque de se les casser au moindre choc.<br>
+              Pour le protéger et éviter de tels problèmes, il faut que les dents du haut et du bas arrivent à être les unes en face des autres, et donc à grandir ensemble. Si ce n'est pas le cas, elles grandront décalées, le visage de l'enfant s'adaptera à ce décalage, et le sourire en sera impacté.</p>
+              <a class="btn btn-theme-colored btn-flat btn-lg mt-10 mb-sm-30" href="#">Know More →</a>
+            </div>
+            <div class="col-md-6">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
+                    </ol>
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <div class="fluid-video-wrapper">
+                                <iframe width="560" height="315" src="{{ asset('images/mp4/dents-avant1.mp4') }}" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="fluid-video-wrapper">
+                                <iframe width="560" height="315" src="{{ asset('images/mp4/dents-avant2.mp4') }}" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+        {% include 'modal/contact.html.twig' %}
+   {% endblock %}

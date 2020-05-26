@@ -1,0 +1,52 @@
+   {% extends ('layout/frontlayout.html.twig') %}
+   {% block body %} 
+     <!--Page Title-->
+    <section class="page-title" style="background-image:url(../assets/images/background/bg-page-title-16.jpg);">
+    	<div class="auto-container">
+        	<h1>CV</h1>
+        </div>
+    </section>
+    
+    
+    <!--Project Details /  Style Three-->
+    <section class="project-details style-Three">
+    	<div class="auto-container">
+        	
+            
+            <div class="row clearfix">
+            	
+                <div class="image-column col-md-6 col-sm-12 col-xs-12"> 
+                	<figure class="image-box"><img src="{{ asset('assets/images/pb.jpg') }}" style="width: 60%;" alt=""></figure><br>
+                    <a href="{{ asset('assets/images/cv-dr.pdf') }}" target="_blank">Voir le CV complet du Dr Bergeyron</a>
+                </div>
+                
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                	<h3>BERGEYRON Patrice</h3>
+                    <p>Orthodontiste, Conférencier et Consultanten orthodontie invisible et amovible par gouttières transparentes dont le système Invisalign® </p>
+                    
+                    <h4>Formation Universitaire</h4>
+                    <ul class="styled-list-one">
+                    	<li>Spécialiste Qualifié O.D.F. en 2000</li>
+                        <li>Certificat d'Etudes Cliniques Spéciales Mention Orthodontie (Faculté de Lille) en 1999</li>
+                        <li>Diplôme de Chirurgien-Dentiste (Faculté de Lille) en 1995</li>
+                        <li>Certificat d'Embryologie Crânio-Faciale.. Certificat de Physiologie Oro-Faciale</li>
+                    </ul>
+                    
+                    <h4>Affiliations aux sociétés</h4>
+
+                    <ul class="styled-list-one">
+                    	<li>Président de l'International Society of Functional Esthetic of Smile in Orthodontics (ISFESO)</li>
+                        <li>Président de la Société Française d'Orthodontie Plastique par Aligneurs (SFOPA)</li>
+                        <li>Membre du European Clinical Education Council Invisalign.. Membre de l'A.A.O (Association Américaine d'Orthodontie)</li>
+                        <li>Membre de la W.F.O (World Fédération d'Orthodontie)</li>
+                        <li>Membre titulaire de la F.F.O (Fédération Française d'Orthodontie)</li>
+                    </ul>
+                    
+                </div>
+                
+            </div>
+        
+        </div>
+    </section>
+
+    {% endblock %}

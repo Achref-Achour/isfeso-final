@@ -1,0 +1,543 @@
+ {% extends ('layout/frontlayout.html.twig') %}
+   {% block body %} 
+   <style>
+   .pdflink{
+    text-align: center!important;
+    font-size: 17px !important;
+   }
+    .formation-cadre{
+    background-color: #d4d5d5;    
+    }
+.inscription-link{
+  background-color:#9d9f9f !important;
+   border:#9d9f9f !important;
+    font-size: 15px !important;
+}
+   .formation-title{
+     color:white;
+     text-align:center;
+     font-size: 17px!important;
+   }
+   .formation-button-inscription{
+    justify-content: center;
+    display: flex;
+   }
+   @media (min-width: 992px){
+   .formation-button-inscription{
+    justify-content: center;
+    display: flex;
+    position: absolute;
+    bottom: 50px !important;
+    width: 75%;
+   }
+       .formation-cadre{
+    min-height:450px!important;
+    
+    }
+   
+ .Banniere-sous-titre{
+color: #ffffff !important;
+ font-size: 33px !important;} 
+    }
+   @media (min-width: 1400px){
+   .banniere-formation {
+    height: 600px !important;
+   }
+   }
+   @media (max-width: 1399px){
+   .banniere-formation {
+    height: 390px !important ;
+    background-position: 50% -43px !important;
+   }
+   }
+   @media (max-width: 767px){
+   .banniere-formation {
+    height: 250px !important;
+    background-position: 50% 0px !important;   
+    }
+    .titre-header{
+      padding-top:0px !important;
+    }
+   }
+ .Banniere-sous-titre{
+color: #ffffff !important;
+ font-size: 20px ;} 
+    }
+   </style>
+   <section class="inner-header divider parallax layer-overlay overlay-dark-5 banniere-formation" data-bg-img="images/bg/banniere-isfeso-fromation.jpg" style="background-image: url(&quot;images/bg/bg3.jpg&quot;); background-position: 50% 0px; ">
+      <div class="container pt-70 pb-20 titre-header">
+        <!-- Section Content -->
+        <div class="section-content">
+          <div class="row">
+            <div class="col-md-12 col-md-offset-2 text-center" style="margin-left:0px !important;">
+              <h2 class="text-white mt-20" style="font-size: 4.4rem !important; margin-left:0px !important;">Découvrez toutes nos formations</h2>
+            <h4 class="Banniere-sous-titre" >Suivez Nos Formations et Soyez à la pointe de la technologie</h4>
+            {# <h2 class="Banniere-sous-titre" ><b></b></h2> #}
+
+            </div>
+          </div>
+        </div>
+      </div>      
+    </section>
+
+    <section >
+     <div class="section-title">
+       
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 pt-50 pb-50">
+                      <h2 class="text-uppercase line-bottom line-height-1 mt-0 mb-0 ">Formations<span class="text-theme-color-2 font-weight-400"> à venir </span></h2>
+          <br><h2 class="text-uppercase  mt-0 mb-0 text-theme-color-2 font-weight-600" style="Text-align: CENTER;">L'Orthodontie du sourire</h2>
+          </div>
+        </div>
+        {# <div class="row" >
+        
+            <div class="col-sm-12" >
+              <h3 class=" font-weight-800">Apprenez l'excellence en Orthodontie grâce à une formation complète en 44 modules</h3>
+              <iframe src="https://drive.google.com/file/d/1zI_FcHPSR4gEW-eXVsBzVQD_if56mSdq/preview" width="640" height="580"></iframe>
+              <br><br>
+              <div class="row pdflink">
+                <b><a href="http://isfeso.com/images/fichier-formation-final.pdf" target="blank" style="color: #f2184f !important;"> vous pouvez télécharger le programme complet en cliquant ici</a>
+                </b>
+              </div>
+            </div>
+            <div class="col-sm-6" >
+              <div>
+                <img class="pull-left mr-15 thumbnail" src="{{ asset('images/project/formation14.png') }}" alt="" >
+              </div>
+              <div > 
+                  <p style="text-align: justify;">
+                  <b><i class="fa fa-hand-o-right"></i> Alignement Dentaire par l'Orthodontie Invisible </b><br>
+                  <i class="fa fa-hand-o-right"></i> Lundi 04 mai 2020 (17h Heure de Paris) <br>
+                        L'équipe B And Smile a l'honneur de vous convier à notre conférence sur La Révolution des Aligneurs Orthodontiques & Dentisterie Numérique tenue par le DR PATRICE BERGEYRON le Lundi 04 mai 2020 à 17H (Heure de Paris). 
+                        Soyez au rendez-vous en cliquant sur le lien affiché ci-dessous. <br>
+                        <a class="btn btn-dark btn-theme-colored btn-sm text-uppercase mt-10" href="https://us02web.zoom.us/webinar/register/WN_LvdYYbHLSZSfmr4hlgKfDQ" target="blank">En savoir plus</a><br>
+                    </p>
+                
+                    <img class="pull-left mr-15 thumbnail" src="{{ asset('images/logo-bas-formation.png') }}" alt="" >
+              </div> 
+            </div>
+        </div> #}
+
+        
+
+      <div class="row" >
+            <div class="col-sm-12" >
+                  <h3 class=" font-weight-800" style="Text-align: CENTER;">Apprenez l'excellence en Orthodontie grâce à une formation complète en 44 modules</h3>
+            </div>
+          {# <div class="col-sm-2" ></div>
+          <div class="col-sm-8" >
+            <iframe src="https://drive.google.com/file/d/1O3G8kNUrSYEUOmwAQGFgQXoYLqnefPLs/preview" width="640" height="580"></iframe>
+            <br><br>
+          </div>
+          <div class="col-sm-2" ></div> #}
+      </div>
+
+      <div class="row">
+            <div class="col-md-4 sm-4">
+              <div class="service-block bg-lighter">
+                <div class="thumb">
+                  <img alt="featured project" src="images/project/adulte.jpg" class="img-fullwidth">
+                </div>
+                <div class="formation-cadre content text-left flip p-25 pt-0 pb-40">
+                    <h4 class="formation-title mb-10"><b>FORMATION</b><br>ORTHODONTIE ADULTE </h4>
+                    {# <ul class="list-icon">
+                      <li>
+                        <i class="fa fa-clock-o"></i>29 Novembre 2019
+                      </li>
+                      <li>
+                        <i class="fa fa-hand-o-right"></i>INTERNATIONAL MASTERCLASS INVISALIGN à Genève
+                      </li>
+                      <li>
+                        <i class="fa fa-hand-o-right"></i>Deux Intervenants : Dr. Jalil Chraibi et Dr. Adel Ben Amor
+                      </li>
+                      <li>
+                        <i class="fa fa-hand-o-right"></i>Clinique B And Smile , Chantepoulet 7, 1201 Genève
+                      </li>
+                    </ul> #}
+                                    {# 
+                    <a class="btn btn-dark btn-theme-colored btn-sm text-uppercase mt-10" href="#">Voir details</a> #}
+                  
+                    <div id="accordion1" class="panel-group accordion">
+                      <div class="panel">
+                        <div class="panel-title"> <a data-parent="#accordion1" data-toggle="collapse" href="#accordion11" class="" aria-expanded="true"> <span class="open-sub"></span>1er degré : Bases Fondamentales</a> </div>
+                        <div id="accordion11" class="panel-collapse collapse" role="tablist" aria-expanded="true">
+                          <div class="panel-content">
+                            <p>1. Notions de base de L’Orthodontie Adulte <br>
+                            2. Diagnostic Orthodontique Adulte selon l’OEFS <br>
+                            3. Traitements Orthodontiques Adulte selon OEFS
+                            
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel">
+                        <div class="panel-title"> <a class="collapsed" data-parent="#accordion1" data-toggle="collapse" href="#accordion12" aria-expanded="false"> <span class="open-sub"></span>2ème degré : Alignement Dentaire et SMILERS®</a> </div>
+                        <div id="accordion12" class="panel-collapse collapse" role="tablist" aria-expanded="false" style="height: 0px;">
+                          <div class="panel-content">
+                            <p>1. Les Protocoles Smilers Ortho®<br>
+                            2. La Smilers Stories : Séances Interactives <br>
+                            3. La classe I DDM Avec Smilers Ortho®<br>
+                            4. Stripping Avec Smilers Ortho®<br>
+                            5. Finition et Auxillaires avec Smilers Ortho® 
+                            </p>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="panel">
+                        <div class="panel-title"> <a class="collapsed" data-parent="#accordion1" data-toggle="collapse" href="#accordion13" aria-expanded="false"> <span class="open-sub"></span>3ème degré : Orthodontie et SMILERS®</a> </div>
+                        <div id="accordion13" class="panel-collapse collapse" role="tablist" aria-expanded="false" style="height: 0px;">
+                          <div class="panel-content">
+                            <p>1. Traitement des classe II et classe II/1 Avec Smilers Ortho®<br>
+                            2. Traitement des classe III Avec Smilers Ortho®<br>
+                            3. Mini-vis et Smilers Ortho® <br>
+                            4. Laser et Smilers Ortho® <br>
+                            5. Traitement des Dents Incluses Avec Smilers Ortho®<br>
+                             6. Contention et maintien
+                            </p>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="panel">
+                        <div class="panel-title"> <a class="collapsed" data-parent="#accordion1" data-toggle="collapse" href="#accordion14" aria-expanded="false"> <span class="open-sub"></span>4ème degré : Cas Extrêmes et SMILERS®</a> </div>
+                        <div id="accordion14" class="panel-collapse collapse" role="tablist" aria-expanded="false" style="height: 0px;">
+                          <div class="panel-content">
+                            <p>
+
+                            1. Blanchiment des Dents<br>
+
+                            2. Management des plans ortho-prothétiques et Smilers Ortho®<br>
+
+                            3. Management des traitements ORTHO /IMPLANTO<br>
+
+                            4. Traitements ORTHO/ PARO avec Smilers Ortho® Ingression et Egression<br>
+
+                            5. Traitement des Troubles articulaires avec Smilers Ortho®<br>
+
+                            6. Traitements Ortho-chirurgicaux avec Smilers Ortho® et sans Blocage<br>
+
+                            
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="formation-button-inscription">
+                      <a class="btn btn-dark btn-theme-colored btn-sm text-uppercase mt-10 inscription-link"  href="{{ path('InscriptionFormation') }}" >inscrivez vous</a>  
+                    </div>
+                </div>
+              </div>
+            </div>
+
+             <div class="col-md-4 sm-4">
+              <div class="service-block bg-lighter">
+                <div class="thumb">
+                  <img alt="featured project" src="images/project/enfant.jpg" class="img-fullwidth">
+                </div>
+                <div class="formation-cadre content text-left flip p-25 pt-0 pb-40">
+                    <h4 class="formation-title mb-10"><b>FORMATION</b><br>ORTHODONTIE ENFANTS</h4>
+                    {# <ul class="list-icon">
+                      <li>
+                        <i class="fa fa-clock-o"></i>29 Novembre 2019
+                      </li>
+                      <li>
+                        <i class="fa fa-hand-o-right"></i>INTERNATIONAL MASTERCLASS INVISALIGN à Genève
+                      </li>
+                      <li>
+                        <i class="fa fa-hand-o-right"></i>Deux Intervenants : Dr. Jalil Chraibi et Dr. Adel Ben Amor
+                      </li>
+                      <li>
+                        <i class="fa fa-hand-o-right"></i>Clinique B And Smile , Chantepoulet 7, 1201 Genève
+                      </li>
+                    </ul> #}
+                                    {# 
+                    <a class="btn btn-dark btn-theme-colored btn-sm text-uppercase mt-10" href="#">Voir details</a> #}
+                  
+                    <div id="accordion2" class="panel-group accordion">
+                      <div class="panel">
+                        <div class="panel-title"> <a data-parent="#accordion2" data-toggle="collapse" href="#accordion15" class="" aria-expanded="true"> <span class="open-sub"></span>1er degré : Le RCC®</a> </div>
+                        <div id="accordion15" class="panel-collapse collapse" role="tablist" aria-expanded="true">
+                          <div class="panel-content">
+                            <p>
+                            1. La Croissance et ses Conséquences sur l’âge et les appareillages<br>
+
+                            2. Diagnostic et plan de traitement assisté par ordinateur<br>
+                            3. Gestion administrative des devis et demandes aux organismes<br>
+                            4. Le Régulateur de croissance contrôlée© (RCC©)<br>
+                            5. Le Masque Orthopédique et La Fronde Mentonnière<br>
+                            6. Traitements ENFANTS OEFS de 3 à 6 ans<br>
+                            7. Traitements ENFANTS OEFS de 6 à 9 ans<br>
+                            8. La Surveillance<br>
+                            
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel">
+                        <div class="panel-title"> <a class="collapsed" data-parent="#accordion2" data-toggle="collapse" href="#accordion16" aria-expanded="false"> <span class="open-sub"></span>2ème degré : Smilers® Child</a> </div>
+                        <div id="accordion16" class="panel-collapse collapse" role="tablist" aria-expanded="false" style="height: 0px;">
+                          <div class="panel-content">
+                            <p>
+                            1. Smilers Ortho® CHILD et Blocs d’Eruption <br>
+                            2. Smilers Ortho® et Denture Définitive<br>
+                            3. La 2ème Molaire clé du succès et de la stabilité<br>
+                            4. Contention et DDS<br>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                     
+                    </div>
+                    <div class="formation-button-inscription">
+                      <a class="btn btn-dark btn-theme-colored btn-sm text-uppercase mt-10 inscription-link"  href="{{ path('InscriptionFormation') }}" >inscrivez vous</a>  
+                    </div>
+                </div>
+              </div>
+            </div>
+
+             <div class="col-md-4 sm-4">
+              <div class="service-block bg-lighter">
+                <div class="thumb">
+                  <img alt="featured project" src="images/project/managment.jpg" class="img-fullwidth">
+                </div>
+                <div class="formation-cadre content text-left flip p-25 pt-0 pb-40">
+                    <h4 class="formation-title mb-10"><b>FORMATION</b><br>MANAGEMENT CABINET 100% DIGITAL</h4>
+                    {# <ul class="list-icon">
+                      <li>
+                        <i class="fa fa-clock-o"></i>29 Novembre 2019
+                      </li>
+                      <li>
+                        <i class="fa fa-hand-o-right"></i>INTERNATIONAL MASTERCLASS INVISALIGN à Genève
+                      </li>
+                      <li>
+                        <i class="fa fa-hand-o-right"></i>Deux Intervenants : Dr. Jalil Chraibi et Dr. Adel Ben Amor
+                      </li>
+                      <li>
+                        <i class="fa fa-hand-o-right"></i>Clinique B And Smile , Chantepoulet 7, 1201 Genève
+                      </li>
+                    </ul> #}
+                                    {# 
+                    <a class="btn btn-dark btn-theme-colored btn-sm text-uppercase mt-10" href="#">Voir details</a> #}
+                  
+                    <div id="accordion3" class="panel-group accordion">
+                      <div class="panel">
+                        <div class="panel-title"> <a data-parent="#accordion3" data-toggle="collapse" href="#accordion20" class="" aria-expanded="true"> <span class="open-sub"></span>Cabinet 100% Digital</a> </div>
+                        <div id="accordion20" class="panel-collapse collapse" role="tablist" aria-expanded="true">
+                          <div class="panel-content">
+                            <p>
+                            1. Le Cabinet 100% Digita <br>
+                            2. Procédures et Protocoles Informatisés<br>
+                            3. Tableaux de Bords<br>
+                            4. Gestion du personnel<br> 
+                            5. Tarifs et Paiements<br>
+
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel">
+                        <div class="panel-title"> <a class="collapsed" data-parent="#accordion3" data-toggle="collapse" href="#accordion21" aria-expanded="false"> <span class="open-sub"></span>Communication by Patrice Bergeyron</a> </div>
+                        <div id="accordion21" class="panel-collapse collapse" role="tablist" aria-expanded="false" style="height: 0px;">
+                          <div class="panel-content">
+                            <p>
+                            1. Les dépliants ISFESO<br>
+                            2. Les diaporamas et vidéos ISFESO<br>
+                            3. Internet et accès<br>
+                            4. Communication en Interne<br> 
+                            5. Communication en Externe<br>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel">
+                        <div class="panel-title"> <a class="collapsed" data-parent="#accordion3" data-toggle="collapse" href="#accordion22" aria-expanded="false"> <span class="open-sub"></span>Publication by Patrice Bergeyron </a> </div>
+                        <div id="accordion22" class="panel-collapse collapse" role="tablist" aria-expanded="false" style="height: 0px;">
+                          <div class="panel-content">
+                            <p>
+                             1. Présentation de Mémoire de Fin de Cycle<br>
+                            2. Présentation de Cas Cliniques </p>
+                          </div>
+                        </div>
+                      </div>
+                    
+                    </div>
+                    <div class="formation-button-inscription">
+                      <a class="btn btn-dark btn-theme-colored btn-sm text-uppercase mt-10 inscription-link"  href="{{ path('InscriptionFormation') }}" >inscrivez vous</a>  
+                    </div>
+                </div>
+              </div>
+            </div>      
+      </div>
+      <div class="row pdflink">
+          <b><a href="http://isfeso.com/images/fichier-formation-final.pdf" target="blank" style="color: #f2184f !important;"> vous pouvez télécharger le programme complet en cliquant ici</a>
+          </b><br><br><br>
+      </div>
+       {# <div class="row">
+            <div class="col-md-7">
+              <img class="pull-left mr-15 thumbnail" src="{{ asset('images/project/formation14.png') }}" alt="" >
+            </div>
+
+            <div class="col-md-5"> 
+              <p style="text-align: justify;">
+              <b><i class="fa fa-hand-o-right"></i> Alignement Dentaire par l'Orthodontie Invisible </b><br>
+              <i class="fa fa-hand-o-right"></i> Lundi 04 mai 2020 (17h Heure de Paris) <br>
+                    L'équipe B And Smile a l'honneur de vous convier à notre conférence sur La Révolution des Aligneurs Orthodontiques & Dentisterie Numérique tenue par le DR PATRICE BERGEYRON le Lundi 04 mai 2020 à 17H (Heure de Paris). 
+                    Soyez au rendez-vous en cliquant sur le lien affiché ci-dessous. <br>
+                    <a class="btn btn-dark btn-theme-colored btn-sm text-uppercase mt-10" href="https://us02web.zoom.us/webinar/register/WN_LvdYYbHLSZSfmr4hlgKfDQ" target="blank">En savoir plus</a><br>
+                </p>
+            
+                <img class="pull-left mr-15 thumbnail" src="{{ asset('images/logo-bas-formation.png') }}" alt="" >
+            </div> 
+
+          </div>
+        </div>
+      </div> #}
+    </section>
+    <!-- Section: COURSES -->
+    <section class="">
+      <div class="container pb-40">
+        <div class="section-title">
+        <div class="row">
+          <div class="col-md-8">
+            <h2 class="text-uppercase line-bottom line-height-1 mt-0 mb-0 ">Formations <span class="text-theme-color-2 font-weight-400">Anterieures</span></h2>
+         </div>
+        </div>
+        </div>
+        <div class="section-content">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="owl-carousel-3col">
+                <div class="item ">
+                  <div class="service-block bg-lighter">
+                    <div class="thumb"> <img alt="featured project" src="images/project/fev05.jpg" class="img-fullwidth">
+                    
+                    </div>
+                    <div class="content text-left flip p-25 pt-0">
+                      <h4 class="line-bottom mb-10">Formation Intensive - Tunis, Les Berges Du Lac</h4>
+                      <ul class="list-icon">
+                        <li><i class="fa fa-clock-o"></i>Mercredi 05 Février 2020 </li>
+                        <li><i class="fa fa-hand-o-right"></i>Hôtel Paris Concorde - Les Berges Du Lac</li>
+                        <li><i class="fa fa-hand-o-right"></i>Journée Officielle De Formation et De Certification INVISALIGN </li>
+                        <li><i class="fa fa-hand-o-right"></i>Intervenant : Patrice Bergeyron</li>
+
+                        {# <li><i class="fa fa-hand-o-right"></i>Clinique B And Smile , Chantepoulet 7, 1201 Genève</li> #}
+                      </ul>
+                     {# <a class="btn btn-dark btn-theme-colored btn-sm text-uppercase mt-10" href="#">Voir details</a> #}
+                    </div>
+                  </div>
+                </div>
+                <div class="item ">
+                  <div class="service-block bg-lighter">
+                    <div class="thumb"> <img alt="featured project" src="images/project/29nov.png" class="img-fullwidth">
+                    
+                    </div>
+                    <div class="content text-left flip p-25 pt-0">
+                      <h4 class="line-bottom mb-10">Formation Intensive - Genève, Suisse</h4>
+                      <ul class="list-icon">
+                        <li><i class="fa fa-clock-o"></i>29 Novembre 2019</li>
+                        <li><i class="fa fa-hand-o-right"></i>Clinique B And Smile , Chantepoulet 7, 1201 Genève</li>
+                        <li><i class="fa fa-hand-o-right"></i>International Masterclass Invisalign® à Genève</li>
+                        <li><i class="fa fa-hand-o-right"></i>Deux Intervenants : Dr. Jalil Chraibi et Dr. Adel Ben Amor</li>
+                      </ul>
+                     {# <a class="btn btn-dark btn-theme-colored btn-sm text-uppercase mt-10" href="#">Voir details</a> #}
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="service-block bg-lighter">
+                    <div class="thumb"> <img alt="featured project" src="images/project/geneve-suisse.png" class="img-responsive img-fullwidth">
+                    
+                    </div>
+                    <div class="content text-left flip p-25 pt-0">
+                      <h4 class="line-bottom mb-10">Formation Intensive - Genève, Suisse</h4>
+                      <ul class="list-icon">
+                        <li><i class="fa fa-clock-o"></i>27 Septembre 2019</li>
+                        <li><i class="fa fa-hand-o-right"></i>Clinique B And Smile , Chantepoulet 7, 1201 Genève</li>
+                        <li><i class="fa fa-hand-o-right"></i>Conférence d’Orthodontie Pédiatrique dès l’âge dès 3 ans et Rééducation Linguale à Genève</li>
+                        <li><i class="fa fa-hand-o-right"></i>Intervenants : Dr. Patrice Bergeyron et Dr. Patrick Fellus</li>
+                      </ul>
+                     {# <a class="btn btn-dark btn-theme-colored btn-sm text-uppercase mt-10" href="#">Voir details</a> #}
+                   </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="service-block bg-lighter">
+                    <div class="thumb"> <img alt="featured project" src="images/project/ile-maurice.png" class="img-responsive img-fullwidth">
+                    
+                    </div>
+                    <div class="content text-left flip p-25 pt-0">
+                      <h4 class="line-bottom mb-10">Formation Intensive - L'Île Maurice</h4>
+                      <ul class="list-icon">
+                        <li><i class="fa fa-clock-o"></i>23 Septembre 2019</li>
+                        <li><i class="fa fa-hand-o-right"></i>Hôtel Hilton Flic en Flac</li>
+                        <li><i class="fa fa-hand-o-right"></i>Invisalign Master Class</li>
+                        <li><i class="fa fa-hand-o-right"></i>Intervenants : Dr. Jalil Chraibi et Dr. Adel Ben Amor</li>
+                        
+                      </ul>
+                     {# <a class="btn btn-dark btn-theme-colored btn-sm text-uppercase mt-10" href="#">Voir details</a> #}
+                   </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="service-block bg-lighter">
+                    <div class="thumb"> <img alt="featured project" src="images/project/ile-djerba.png" class="img-responsive img-fullwidth">
+                    
+                    </div>
+                    <div class="content text-left flip p-25 pt-0">	
+                      <h4 class="line-bottom mb-10">Formation Intensive - Djerba, Tunisie</h4>
+                      <ul class="list-icon">
+                        <li><i class="fa fa-clock-o"></i>03 Juillet 2019</li>
+                        <li><i class="fa fa-hand-o-right"></i>Club Med Djerba, Tunisie</li>
+                        <li><i class="fa fa-hand-o-right"></i>Formation Invisalign® - Les secrets de la Classe II</li>
+                        <li><i class="fa fa-hand-o-right"></i>Intervenant : Dr. Patrice Bergeyron</li>
+                        
+                      </ul>
+                      {# <a class="btn btn-dark btn-theme-colored btn-sm text-uppercase mt-10" href="#">Voir details</a> #}
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="service-block bg-lighter">
+                    <div class="thumb"> <img alt="featured project" src="images/project/dakarinvi.png" class="img-responsive img-fullwidth">
+                    
+                    </div>
+                    <div class="content text-left flip p-25 pt-0">
+                      <h4 class="line-bottom mb-10">Certification Invisalign - Dakar, Sénégal</h4>
+                      <ul class="list-icon">
+                        <li><i class="fa fa-clock-o"></i>14 Juin 2019</li>
+                        <li><i class="fa fa-hand-o-right"></i>Radisson Blu Hotel, Dakar Sea Plaza</li>
+                        <li><i class="fa fa-hand-o-right"></i>Formation Invisalign® - Cértification OFFICIELLE</li>
+                        <li><i class="fa fa-hand-o-right"></i>Intervenant : Dr. Patrice Bergeyron</li>
+                        
+                      </ul>
+                      {# <a class="btn btn-dark btn-theme-colored btn-sm text-uppercase mt-10" href="#">Voir details</a> #}
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="service-block bg-lighter">
+                    <div class="thumb"> <img alt="featured project" src="images/project/marrakech.png" class="img-responsive img-fullwidth">
+                    
+                    </div>
+                    <div class="content text-left flip p-25 pt-0">
+                      <h4 class="line-bottom mb-10">Formation Intensive - Marrakech, Maroc</h4>
+                      <ul class="list-icon">
+                        <li><i class="fa fa-clock-o"></i>02 Juillet 2018</li>
+                        <li><i class="fa fa-hand-o-right"></i>Club Med Marrakech, Maroc</li>
+                        <li><i class="fa fa-hand-o-right"></i>Cycle de Formation & Expertise en Invisalign®</li>
+                        <li><i class="fa fa-hand-o-right"></i>Intervenants : Dr Patrice Bergeyron , Pr Bernard , Dr Adel Ben Amor , Dr Samir Tobji , Dr Jalil Chraibi , Dr Demonceaux , Dr Elhad , Dr Vergez et Dr Bennis</li>
+                        
+                      </ul>
+                      {# <a class="btn btn-dark btn-theme-colored btn-sm text-uppercase mt-10" href="#">Voir details</a> #}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   {% endblock %}
+     

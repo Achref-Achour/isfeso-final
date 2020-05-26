@@ -1,0 +1,106 @@
+   {% extends ('layout/frontlayout.html.twig') %}
+   {% block body %} 
+     <!--Page Title-->
+    <section class="page-title" style="background-image:url(../assets/images/background/bg-page-title-16.jpg);">
+    	<div class="auto-container">
+        	<h1>Consultant</h1>
+        </div>
+    </section>
+    
+    
+    <!--Project Details /  Style Three-->
+    <section class="project-details style-Three">
+    	<div class="auto-container">
+        	
+            
+            <div class="row clearfix">
+            	
+                <div class="image-column col-md-6 col-sm-12 col-xs-12">
+                	<figure class="image-box"><img src="{{ asset('assets/images/clincheck.jpg') }}" alt=""></figure>
+                </div>
+                
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                	<h3>Dr Patrice Bergeyron, consultant en nouvelles technologies pour l'orthodontie</h3>
+                    <p>En 2012 il constate qu’encore très peu de patients en France et dans le monde ont accès à ces techniques par manque d’information et de formation, il décide donc d’enseigner tout son savoir à ses collaborateurs et associés pour se libérer de sa consultation de la Reserve à Bandol et se consacrer à actualiser les évolutions des différents cabinets à travers le monde où il est consultant et formateur.</p>
+                    <p>En 2012, tout le monde à le droit d'avoir des dents blanches et alignées naturellement avec un minimum de contraintes et le plus souvent sans douleur ou chirurgie et parfois en 1 seul rendez-vous grâce aux avancées technologiques au service de la santé </p>
+                </div>
+                
+            </div>
+        	
+            
+            <div class="row clearfix">
+                
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                    <ul class="styled-list-one">
+                        <li>Sur l'Orthodontie Esthétique et Fonctionnelle du Sourire© (OEFS© lien digérable vers l’ISFESO)</li>
+                        <li>Sur les différents (cas cliniques-lien digérable vers les cas cliniques sur le site de B and Smile)</li>
+                        <li>Le développement de la patientèle</li>
+                        <li>Pour faire des conférences</li>
+                        <li>Pour faire un audit de votre structure grâce à son expérience unique, un accompagnement sur plusieurs années</li>
+                        <li>Faire des formations à l'OEFS©, certifications, agréments Patrice Bergeyron®</li>
+                        <li>Faire des créations de sociétés ou associations</li>
+                    </ul>
+                </div>
+            	
+                <div class="image-column col-md-6 col-sm-12 col-xs-12">
+                	<figure class="image-box"><img src="{{ asset('assets/images/2ortho.jpg') }}"  style="width: 35%;float: right" alt=""></figure>
+                </div>
+                
+            </div>    
+            
+        </div>
+    </section>
+    <section class="request-quote-section">
+    	<div class="auto-container">
+        	<div class="row clearfix">
+            	
+                <!--Form Column-->
+                <div class="form-column col-md-5 col-sm-12 col-xs-12">
+                	<h2>Demandez Une intervention</h2>
+                    
+                	<div class="default-form-style">
+                    	<form method="post" action="index.html">
+                        	<div class="form-group">
+                            	<div class="field-label">votre Nom :</div>
+                            	<input type="text" name="your-name" value="" placeholder="" required="">
+                            </div>
+                            
+                            <div class="form-group">
+                            	<div class="field-label">Votre Email :</div>
+                            	<input type="email" name="your-email" value="" placeholder="" required="">
+                            </div>
+                            
+                            <div class="form-group">
+                            	<div class="field-label">Votre num° GSM :</div>
+                            	<input type="text" name="your-phone" value="" placeholder="" required="">
+                            </div>
+                            
+                            <div class="form-group">
+                            	<div class="field-label">Sujet :</div>
+                            	<select name="topic">
+                                	<option>Développement Business</option>
+                                    <option>Intervention </option>
+                                    <option>Conférences</option>
+                                    <option>Formations</option>
+                                    <option>Autres</option>
+                                </select>
+                            </div>
+                            
+                            <div class="text-left padd-top-20"><button type="button" class="theme-btn btn-style-four">Envoyez votre demande</button></div>
+                            
+                        </form>
+                    </div>
+                </div>
+                
+                <!--Image Column-->
+                <div class="image-column col-md-7 col-sm-12 col-xs-12">
+                	<figure class="image-box wow fadeInRight animated" data-wow-delay="0ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInRight;">
+                    	<img src="{{ asset('assets/images/resource/man-image-1.png') }}" alt="">
+                    </figure>
+                </div>
+                
+                
+            </div>
+        </div>
+    </section>
+    {% endblock %}

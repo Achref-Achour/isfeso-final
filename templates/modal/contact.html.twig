@@ -1,0 +1,104 @@
+
+
+ <section id="contact" class="divider layer-overlay overlay-theme-colored-9" data-bg-img="images/bg/bg2.jpg" style="background-image: url(&quot;images/bg/bg2.jpg&quot;);">
+      <div class="container pb-0">
+        <div class="section-content">
+          <div class="row">
+          <div class="col-md-4" data-wow-duration="1.4s">
+            <img src="images/about/dc2.png" alt="">
+          </div>
+            <div class="col-md-8 wow fadeInRight mt-10" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s;">
+              <h3 class="title line-bottom line-height-1 text-white mt-0 mb-30">Conactez <span class="text-theme-color-2">nous</span></h3>          
+              <!-- Contact Form -->
+              <form id="contact_form" name="contact_form" class="" action="{{ path('contact') }}" method="post" novalidate="novalidate">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="form-group mb-20">
+                      <input name="nom" class="form-control" type="text" placeholder="Votre nom" required="" aria-required="true">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group mb-20">
+                      <input name="prenom" class="form-control required email" type="text" placeholder="Votre prénom" aria-required="true">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="form-group mb-20">
+                       <input name="email" class="form-control required email" type="email" placeholder="Entrez votre adresse email" aria-required="true">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group mb-30">
+                     <input name="tel" class="form-control required email" type="text" placeholder="Entrez votre num tél" aria-required="true">                    
+                    </div>
+                  </div>
+                </div>
+                    <div class="form-group mb-20">
+                  <textarea name="sujet" class="form-control required" rows="5" placeholder="Enter Message" aria-required="true"></textarea>
+                </div>
+                    <div class="form-group">
+                  <input name="form_botcheck" class="form-control" type="hidden" value="">
+                  <button type="submit" class="btn btn-flat text-uppercase mt-0 mb-sm-30" data-loading-text="Please wait...">Send your message</button>
+                  <button type="reset" class="btn btn-flat text-uppercase mt-0 mb-sm-30">Reset</button>
+                </div>
+              </form>
+              
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.js"></script>
+        <script>
+        $(document).ready(function () {
+            
+        $( "#contact_form" ).validate({
+                rules: {
+                    nom: {
+                    "required": true,
+                    "minlength": 2,
+                    "maxlength": 20
+                    },
+                    prenom: {
+                    "required": true,
+                    "minlength": 2,
+                    "maxlength": 20
+                    },
+                    email: {
+                    "required": true,
+                    "email": true
+                    },
+                    tel: {
+                    "required": true
+                    },
+                    sujet: {
+                    "required": true,
+                    "minlength": 20,
+                    }
+                },
+                messages: {
+                    nom: {
+                    "required": "Ce champ est obligatoire",
+                    "minlength": "Le nom doit contenir au minmum 2 caractéres",
+                    "maxlength": "Le nom doit contenir au maximum 20 caractéres"
+                    },
+                    prenom: {
+                    "required": "Ce champ est obligatoire"
+                    },
+                    email: {
+                    "required": "Ce champ est obligatoire",
+                    "email": "Veuillez vérifier le format"
+                    },
+                    tel: {
+                    "required": "Ce champ est obligatoire"
+                    },
+                    sujet: {
+                    "required": "Ce champ est obligatoire",
+                    "minlength": "Votre message doit contenir au moins 20 caractéres",
+                    }
+                }
+            });
+        });   
+        </script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>

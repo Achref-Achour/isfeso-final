@@ -1,0 +1,195 @@
+
+ {% extends ('layout/frontlayout.html.twig') %}
+   {% block body %} 
+   <style>
+      .error{
+        color: red;
+        font-size: 12px
+      }
+   </style>
+   
+    <!-- Section: inner-header -->
+    <section class="inner-header divider parallax layer-overlay overlay-dark-5" data-bg-img="images/bg/bg3.jpg">
+      <div class="container pt-70 pb-20">
+        <!-- Section Content -->
+        <div class="section-content">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center">
+              <h2 class="text-white mt-20">Contact ISFESO®</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Divider: Contact -->
+    <section class="divider layer-overlay overlay-white-9" data-bg-img="images/bg/bg15.html">
+      <div class="container">
+        <div class="row pt-30">
+          <div class="col-md-8">
+                {% for message in app.flashes('success')  %}
+                    <div class="alert alert-success">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+                {% for message in app.flashes('success1')  %}
+                    <div class="alert alert-danger">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            <h3 class="line-bottom mt-0 mb-20">Contactez nous</h3>
+            <!-- Contact Form -->
+            <form id="contact_form" name="contact_form" class="form-transparent" action="{{ path('contact') }}" method="post">
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="form_name">Nom<small>*</small></label>
+                    <input name="nom"  class="form-control" type="text" placeholder="Votre nom" required="">
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="form_name">Prénom <small>*</small></label>
+                    <input name="prenom" class="form-control required" type="text" placeholder="Votre prénom">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="form_email">Email <small>*</small></label>
+                    <input name="email" class="form-control required email" type="email" placeholder="Entrez votre adresse email">
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="form_phone">Téléphone</label>
+                    <input name="tel" class="form-control" type="text" placeholder="Entrez votre num tél">
+                  </div>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="form_name">Message</label>
+                <textarea name="sujet" class="form-control required" rows="5" placeholder="Entrez votre message"></textarea>
+              </div>
+
+              <input type="hidden" name="recaptcha_response" id="recaptchaResponse">
+
+              <div class="form-group">
+                <input name="form_botcheck" class="form-control" type="hidden" value="" />
+                <button type="submit" class="btn btn-dark btn-theme-colored btn-flat mr-5" data-loading-text="Please wait...">Envoyez</button>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-4">
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="icon-box left media bg-black-333 p-25 mb-20"> <a class="media-left pull-left" href="#"> <i class="pe-7s-map-2 text-theme-color-2"></i></a>
+                  <div class="media-body"> <strong class="text-white">Adresse</strong>
+                    <p class="text-white">237 Av. de la Libération, 83150 Bandol, France</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-12 text-white">
+                <div class="icon-box left media bg-black-333 p-25 mb-20"> <a class="media-left pull-left" href="#"> <i class="pe-7s-call text-theme-color-2"></i></a>
+                  <div class="media-body"> <strong class="text-white">Téléphone </strong>
+                    <p>+33 4 89 66 50 60</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-12 text-white">
+                <div class="icon-box left media bg-black-333 p-25 mb-20"> <a class="media-left pull-left" href="#"> <i class="pe-7s-mail text-theme-color-2"></i></a>
+                  <div class="media-body"> <strong class="text-white">Email</strong>
+                    <p>contact@isfeso.com</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-12 text-white">
+                <div class="icon-box left media bg-black-333 p-25 mb-20"> <a class="media-left pull-left" href="#"> <i class="fa fa-clock-o text-theme-color-2 "></i></a>
+                  <div class="media-body"> <strong class="text-white">Horaires</strong>
+                    <p>24/24H - 7/7J </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Divider: Google Map -->
+    <section>
+      <div class="container-fluid p-0">
+        <div class="row">
+
+          <!-- Google Map HTML Codes --><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2911.386094222679!2d5.7624554149878255!3d43.138421093583496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c90704f9171f51%3A0x5c38943b66ef7ee7!2s237%20Av.%20de%20la%20Lib%C3%A9ration%2C%2083150%20Bandol%2C%20France!5e0!3m2!1sfr!2stn!4v1583400191663!5m2!1sfr!2stn" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+
+        </div>
+      </div>
+    </section>
+   {% endblock %}
+   {% block javascripts %}
+      {{ parent() }}
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.js"></script>
+    <script>
+    $(document).ready(function () {
+        
+    $( "#contact_form" ).validate({
+            rules: {
+                nom: {
+                "required": true,
+                "minlength": 2,
+                "maxlength": 20
+                },
+                prenom: {
+                "required": true,
+                "minlength": 2,
+                "maxlength": 20
+                },
+                email: {
+                "required": true,
+                "email": true
+                },
+                tel: {
+                "required": true
+                },
+                sujet: {
+                "required": true,
+                "minlength": 20,
+                }
+            },
+            messages: {
+                nom: {
+                "required": "Ce champ est obligatoire",
+                "minlength": "Le nom doit contenir au minmum 2 caractéres",
+                "maxlength": "Le nom doit contenir au maximum 20 caractéres"
+                },
+                prenom: {
+                "required": "Ce champ est obligatoire"
+                },
+                email: {
+                "required": "Ce champ est obligatoire",
+                "email": "Veuillez vérifier le format"
+                },
+                tel: {
+                "required": "Ce champ est obligatoire"
+                },
+                sujet: {
+                "required": "Ce champ est obligatoire",
+                "minlength": "Votre message doit contenir au moins 20 caractéres",
+                }
+            }
+        });
+    });   
+    </script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LcJIe0UAAAAAJPojxzNCZoYLSqJ4WBxZWZsLz3V"></script>
+<script>
+grecaptcha.ready(function() {
+    grecaptcha.execute('6LcJIe0UAAAAAJPojxzNCZoYLSqJ4WBxZWZsLz3V', {action: 'contact'}).then(function(token) {
+       //console.log(token);
+        var recaptchaResponse = document.getElementById('recaptchaResponse');
+        recaptchaResponse.value = token;    });
+});
+</script>
+   {% endblock %}

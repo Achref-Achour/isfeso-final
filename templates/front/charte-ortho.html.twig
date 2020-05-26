@@ -1,0 +1,101 @@
+ {% extends ('layout/frontlayout.html.twig') %}
+   {% block body %} 
+   <section class="inner-header divider parallax layer-overlay overlay-dark-5" data-bg-img="images/bg/bg3.jpg" style="background-image: url(&quot;images/bg/bg3.jpg&quot;); background-position: 50% 97px;">
+      <div class="container pt-70 pb-20">
+        <!-- Section Content -->
+        <div class="section-content">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center">
+              <h2 class="text-white mt-20">Charte des Orthodontistes ISFFESO®</h2>
+            </div>
+          </div>
+        </div>
+      </div>      
+    </section>
+
+    <section class="divider @white-f8">
+      <div class="container pt-120 pb-120">
+        <div class="row">
+          <div class="col-md-5">
+            <img class="img-fullwidth" src="{{ asset('images/charte-isfeso.png') }}" alt="">
+          </div>
+          <div class="col-md-7">       
+            <ul class="list-divider pl-20">
+              <li><i class="fa fa-check-square-o mr-10 text-black-light"></i> <a href="#"><b>1.</b> Appliquer l’Orthodontie Esthétique et Fonctionnelle du sourire</a></li>
+              <li> <i class="fa fa-check-square-o mr-10 text-black-light"></i> <a href="#"><b>2.</b> Respecter le patient comme un être humain et observer son fonctionnement pour aider sa croissance, améliorer ses fonctions et son esthétique.</a></li>
+              <li> <i class="fa fa-check-square-o mr-10 text-black-light"></i> <a href="#"><b>3.</b> Informer le patient sur les dysharmonies qu’il présente, leurs conséquences et les différentes possibilités de traitement avec leurs avantages et leurs inconvénients pour définir ensembles la meilleure solution tenant compte des critères scientifiques et de vos désirs. </a></li>
+              <li> <i class="fa fa-check-square-o mr-10 text-black-light"></i> <a href="#"><b>4.</b> Intégrer votre individualité et votre volonté de changement, non en fonction d'une norme ou d'un appareillage mais en fonction des résultats de votre étude personnelle à partir des procédures et logiciels d’aide au diagnostic et de la philosophie développés exclusivement par et pour les orthodontistes de l'ISFESO. </a></li>
+              <li> <i class="fa fa-check-square-o mr-10 text-black-light"></i> <a href="#"><b>5.</b> N'effectuer des extractions dentaires que s'il n'y a pas d'autres solutions</a></li>
+              <li> <i class="fa fa-check-square-o mr-10 text-black-light"></i> <a href="#"><b>6.</b> Prendre connaissance systématiquement et informer mes patient des nouvelles technologies et évolutions en orthodontie esthétique</a></li>
+              <li> <i class="fa fa-check-square-o mr-10 text-black-light"></i> <a href="#"><b>7.</b> Suivre, respecter et appliquer les décisions selon les membres de l'association dans l’intérêt du patient</a></li>
+              <li> <i class="fa fa-check-square-o mr-10 text-black-light"></i> <a href="#"><b>8.</b> Accepter d'être contrôlé dans ma pratique et mes actes par les membres de l’ISFESO dans l'intérêt du patient et du respect de mes engagements</a></li>
+            </ul>
+
+            <a class="btn btn-dark mt-30" href="{{ asset('images/charte/charte-ortho.pdf') }}" target="_blank">Lire la charte compléte</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+ <section id="contact" class="divider layer-overlay overlay-theme-colored-9" data-bg-img="images/bg/bg2.jpg" style="background-image: url(&quot;images/bg/bg2.jpg&quot;);">
+      <div class="container pb-0">
+        <div class="section-content">
+          <div class="row">
+          <div class="col-md-4" data-wow-duration="1.4s">
+            <img src="images/about/dc2.png" alt="">
+          </div>
+            <div class="col-md-8 wow fadeInRight mt-10" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s;">
+              <h3 class="title line-bottom line-height-1 text-white mt-0 mb-30">Conactez <span class="text-theme-color-2">nous</span></h3>          
+              <!-- Contact Form -->
+              <form id="contact_form" name="contact_form" class="" action="{{ path('contact') }}" method="post" novalidate="novalidate">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="form-group mb-20">
+                      <input name="form_name" class="form-control" type="text" placeholder="Enter Name" required="" aria-required="true">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group mb-20">
+                      <input name="form_email" class="form-control required email" type="email" placeholder="Enter Email" aria-required="true">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="form-group mb-20">
+                      <div class="styled-select">
+                        <select id="person_select" name="person_select" class="form-control" required="" aria-required="true">
+                          <option value="">Choose Subject</option>
+                          <option value="1 Person">Software Engineering</option>
+                          <option value="2 Person">Computer Science engineering</option>
+                          <option value="3 Person">Accounting Technologies</option>
+                          <option value="Family Pack">BACHELOR`S DEGREE</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group mb-30">
+                      <input name="reservation_date" class="form-control required date-picker" type="text" placeholder="Reservation Date" aria-required="true">
+                    </div>
+                  </div>
+                </div>
+                    <div class="form-group mb-20">
+                  <textarea name="form_message" class="form-control required" rows="5" placeholder="Enter Message" aria-required="true"></textarea>
+                </div>
+                    <div class="form-group">
+                  <input name="form_botcheck" class="form-control" type="hidden" value="">
+                  <button type="submit" class="btn btn-flat text-uppercase mt-0 mb-sm-30" data-loading-text="Please wait...">Send your message</button>
+                  <button type="reset" class="btn btn-flat text-uppercase mt-0 mb-sm-30">Reset</button>
+                </div>
+              </form>
+              <!-- Contact Form Validation-->
+              <script type="text/javascript">
+                  $("#contact_form").validate();
+              </script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+   {% endblock %}

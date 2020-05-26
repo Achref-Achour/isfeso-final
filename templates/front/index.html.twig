@@ -1,0 +1,1209 @@
+ {% extends ("layout/frontlayout.html.twig") %}
+   {% block body %} 
+   <style>
+        .icon-box{
+            height: 100px;
+        }
+  
+   .pdflink{
+    text-align: center!important;
+    font-size: 17px !important;
+   }
+    .formation-cadre{
+    background-color: #d4d5d5;    
+    }
+.inscription-link{
+  background-color:#9d9f9f !important;
+   border:#9d9f9f !important;
+    font-size: 15px !important;
+}
+   .formation-title{
+     color:white;
+     text-align:center;
+     font-size: 17px!important;
+   }
+   .formation-button-inscription{
+    justify-content: center;
+    display: flex;
+   }
+   @media (min-width: 992px){
+   .formation-button-inscription{
+    justify-content: center;
+    display: flex;
+    position: absolute;
+    bottom: 50px !important;
+    width: 75%;
+   }
+       .formation-cadre{
+    min-height:450px!important;
+    
+    }
+   
+ .Banniere-sous-titre{
+color: #ffffff !important;
+ font-size: 33px !important;} 
+    }
+   @media (min-width: 1400px){
+   .banniere-formation {
+    height: 600px !important;
+   }
+   }
+   @media (max-width: 1399px){
+   .banniere-formation {
+    height: 390px !important ;
+    background-position: 50% -43px !important;
+   }
+   }
+   @media (max-width: 767px){
+   .banniere-formation {
+    height: 250px !important;
+    background-position: 50% 0px !important;   
+    }
+    .titre-header{
+      padding-top:0px !important;
+    }
+   }
+ .Banniere-sous-titre{
+color: #ffffff !important;
+ font-size: 20px ;} 
+    }
+
+   </style>
+            <!-- Section: home -->
+    <section id="home">
+      <div class="container-fluid p-0">
+        
+        <!-- Slider Revolution Start -->
+        <div class="rev_slider_wrapper">
+          <div class="rev_slider" data-version="5.0">
+            <ul>
+              <!-- SLIDE 1 -->
+              <li data-index="rs-1" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="{{ asset('images/bg/accueil1.jpg') }}" data-rotate="0" data-saveperformance="off" data-title="Slide 1" data-description="">
+                <!-- MAIN IMAGE -->
+                <img src="{{ asset('images/bg/accueil1.jpg') }}"  alt=""  data-bgposition="center 100%" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina>
+                <!-- LAYERS -->
+
+                    <!-- LAYER NR. 1 -->
+                    <div class="tp-caption tp-resizeme text-uppercase text-white font-raleway"
+                      id="rs-1-layer-1"
+                      data-x="['left']"
+                      data-hoffset="['30']"
+                      data-y="['middle']"
+                      data-voffset="['-110']" 
+                      data-fontsize="['30']"
+                      data-lineheight="['110']"
+                      data-width="none"
+                      data-height="none"
+                      data-whitespace="nowrap"
+                      data-transform_idle="o:1;s:500"
+                      data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
+                      data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
+                      data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                      data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                      data-start="1000" 
+                      data-splitin="none" 
+                      data-splitout="none" 
+                      data-responsive_offset="on"
+                      style="z-index: 7; white-space: nowrap; font-weight:400;">La santé par le sourire 
+                    </div>
+
+            
+                <!-- LAYER NR. 2 -->
+                <div class="tp-caption tp-resizeme text-uppercase text-white font-raleway bg-theme-colored-transparent border-left-theme-color-2-6px pl-20 pr-20 col-sm-12"
+                  id="rs-1-layer-2"
+
+                  data-x="['left']"
+                  data-hoffset="['35']"
+                  data-y="['middle']"
+                  data-voffset="['-25']" 
+                  data-fontsize="['20','18','15']"
+                  data-lineheight="['54']"
+                  data-width="none"
+                  data-height="none"
+                  data-whitespace="nowrap"
+                  data-transform_idle="o:1;s:500"
+                  data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
+                  data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
+                  data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                  data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                  data-start="1000" 
+                  data-splitin="none" 
+                  data-splitout="none" 
+                  data-responsive-offset="on"
+                  overflow="auto"
+                  style="z-index: 7; white-space: nowrap; font-weight:600;">International Society of Functional Esthetic of Smile in Orthodontics
+                </div>
+                <!-- LAYER NR. 3 -->
+                
+                <div class="tp-caption tp-resizeme text-white" 
+                  id="rs-1-layer-3"
+
+                  data-x="['left']"
+                  data-hoffset="['35']"
+                  data-y="['middle']"
+                  data-voffset="['35']"
+                  data-fontsize="['16','14','14']"
+                  data-lineheight="['28']"
+                  data-width="none"
+                  data-height="none"
+                  data-whitespace="nowrap"
+                  data-transform_idle="o:1;s:500"
+                  data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
+                  data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
+                  data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                  data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                  data-start="1400" 
+                  data-splitin="none" 
+                  data-splitout="none" 
+                  data-responsive-offset="on"
+                  style="z-index: 5; white-space: nowrap; letter-spacing:0px; font-weight:400; ">L'ISFESO est une société scientifique regroupant des orthodontistes qui a pour but d'étudier et promouvoir<br> l'Orthodontie Esthétique et Fonctionnelle du Sourire au service de l'orthodontie et du sourire
+                </div>
+
+                <!-- LAYER NR. 4 -->
+                <div class="tp-caption tp-resizeme" 
+                  id="rs-1-layer-4"
+
+                  data-x="['left']"
+                  data-hoffset="['35']"
+                  data-y="['middle']"
+                  data-voffset="['100']"
+                  data-width="none"
+                  data-height="none"
+                  data-whitespace="nowrap"
+                  data-transform_idle="o:1;"
+                  data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
+                  data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+                  data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" 
+                  data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                  data-start="1400" 
+                  data-splitin="none" 
+                  data-splitout="none" 
+                  data-responsive_offset="on"
+                  style="z-index: 5; white-space: nowrap; letter-spacing:1px;"><a class="btn btn-colored btn-lg btn-flat btn-theme-colored border-left-theme-color-2-6px pl-20 pr-20" href="{{ path('oefs') }}">En Savoir Plus</a> 
+                </div>
+              </li>
+
+              <!-- SLIDE 2 -->
+              <li data-index="rs-2" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="{{ asset('images/bg/accueil2.jpg') }}" data-rotate="0" data-saveperformance="off" data-title="Slide 2" data-description="">
+                <!-- MAIN IMAGE -->
+                <img src="{{ asset('images/bg/accueil2.jpg') }}"  alt=""  data-bgposition="center 40%" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina>
+                <!-- LAYERS -->
+
+                <!-- LAYER NR. 1 -->
+                <div class="tp-caption tp-resizeme text-uppercase  bg-dark-transparent-5 text-white font-raleway border-left-theme-color-2-6px border-right-theme-color-2-6px pl-30 pr-30"
+                  id="rs-2-layer-1"
+                  data-x="['center']"
+                  data-hoffset="['0']"
+                  data-y="['middle']"
+                  data-voffset="['-90']" 
+                  data-fontsize="['28']"
+                  data-lineheight="['54']"
+                  data-width="none"
+                  data-height="none"
+                  data-whitespace="nowrap"
+                  data-transform_idle="o:1;s:500"
+                  data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
+                  data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
+                  data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                  data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                  data-start="1000" 
+                  data-splitin="none" 
+                  data-splitout="none" 
+                  data-responsive_offset="on"
+                  style="z-index: 7; white-space: nowrap; font-weight:400; border-radius: 30px;">Rejoignez-Nous  
+                </div>
+
+                <!-- LAYER NR. 2 -->
+                <div class="tp-caption tp-resizeme text-uppercase bg-theme-colored-transparent text-white font-raleway pl-30 pr-30"
+                  id="rs-2-layer-2"
+
+                  data-x="['center']"
+                  data-hoffset="['0']"
+                  data-y="['middle']"
+                  data-voffset="['-20']"
+                  data-fontsize="['48']"
+                  data-lineheight="['70']"
+                  data-width="none"
+                  data-height="none"
+                  data-whitespace="nowrap"
+                  data-transform_idle="o:1;s:500"
+                  data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
+                  data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
+                  data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                  data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                  data-start="1000" 
+                  data-splitin="none" 
+                  data-splitout="none" 
+                  data-responsive_offset="on"
+                  style="z-index: 7; white-space: nowrap; font-weight:700; border-radius: 30px;"> L’orthodontie de demain
+                </div>
+
+                <!-- LAYER NR. 3 -->
+                <div class="tp-caption tp-resizeme text-white text-center" 
+                  id="rs-2-layer-3"
+
+                  data-x="['center']"
+                  data-hoffset="['0']"
+                  data-y="['middle']"
+                  data-voffset="['50']"
+                  data-fontsize="['16']"
+                  data-lineheight="['28']"
+                  data-width="none"
+                  data-height="none"
+                  data-whitespace="nowrap"
+                  data-transform_idle="o:1;s:500"
+                  data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
+                  data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
+                  data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                  data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                  data-start="1400" 
+                  data-splitin="none" 
+                  data-splitout="none" 
+                  data-responsive_offset="on"
+                  style="z-index: 5; white-space: nowrap; letter-spacing:0px; font-weight:400;">Plus qu’une organisation, c’est une véritable société scientifique <br>à laquelle ont déjà adhérer plusieurs orthodontistes à travers le monde entier.
+                </div>
+
+                <!-- LAYER NR. 4 -->
+                  <div class="tp-caption tp-resizeme text-uppercase  bg-dark-transparent-5 text-white font-raleway border-left-theme-color-2-6px border-right-theme-color-2-6px pl-30 pr-30 "
+                    id="rs-2-layer-1"
+                    data-x="['center']"
+                    data-hoffset="['0']"
+                    data-y="['middle']"
+                    data-voffset="['-90']" 
+                    data-fontsize="['28']"
+                    data-lineheight="['54']"
+                    data-width="none"
+                    data-height="none"
+                    data-whitespace="nowrap"
+                    data-transform_idle="o:1;s:500"
+                    data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
+                    data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
+                    data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                    data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                    data-start="1000" 
+                    data-splitin="none" 
+                    data-splitout="none" 
+                    data-responsive_offset="on"
+                    style="z-index: 7; white-space: nowrap; font-weight:400; border-radius: 30px;"><a href="{{ path('adhesion') }}">Rejoignez-Nous  </a>
+                  </div>
+
+
+                {# <div class="tp-caption tp-resizeme" 
+                  id="rs-2-layer-4"
+
+                  data-x="['center']"
+                  data-hoffset="['0']"
+                  data-y="['middle']"
+                  data-voffset="['115']"
+                  data-width="none"
+                  data-height="none"
+                  data-whitespace="nowrap"
+                  data-transform_idle="o:1;"
+                  data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
+                  data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+                  data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" 
+                  data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                  data-start="1400" 
+                  data-splitin="none" 
+                  data-splitout="none" 
+                  data-responsive_offset="on"
+                  style="z-index: 5; white-space: nowrap; letter-spacing:1px;"><a class="btn btn-default btn-circled btn-transparent pl-20 pr-20" href="{{ path('adhesion') }}">Devenez Membre</a> 
+                </div> #}
+              </li>
+
+              <!-- SLIDE 3 -->
+              <li data-index="rs-3" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="{{ asset('images/bg/accueil3.png') }}" data-rotate="0" data-saveperformance="off" data-title="Slide 3" data-description="">
+                <!-- MAIN IMAGE -->
+                <img src="{{ asset('images/bg/accueil3.png') }}"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina>
+                <!-- LAYERS -->
+
+                <!-- LAYER NR. 1 -->
+                <div class="tp-caption tp-resizeme text-uppercase text-white font-raleway bg-theme-colored-transparent border-right-theme-color-2-6px pr-20 pl-20 "
+                  id="rs-3-layer-1"
+                  data-x="['right']"
+                  data-hoffset="['30']"
+                  data-y="['middle']"
+                  data-voffset="['-90']" 
+                  data-fontsize="['30']"
+                  data-lineheight="['72']"
+                  data-width="none"
+                  data-height="none"
+                  data-whitespace="nowrap"
+                  data-transform_idle="o:1;s:500"
+                  data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
+                  data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
+                  data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                  data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                  data-start="1000" 
+                  data-splitin="none" 
+                  data-splitout="none" 
+                  data-responsive_offset="on"
+                  style="z-index: 7; white-space: nowrap; font-weight:600;"> 
+                </div>
+
+                <!-- LAYER NR. 2 -->
+                <div class="tp-caption tp-resizeme text-uppercase bg-dark-transparent-6 text-white font-raleway pl-20 pr-20 border-right-theme-color-2-6px"
+                  id="rs-3-layer-2"
+
+                  data-x="['right']"
+                  data-hoffset="['35']"
+                  data-y="['middle']"
+                  data-voffset="['-25']" 
+                  data-fontsize="['32','26']"
+                  data-lineheight="['54']"
+                  data-width="none"
+                  data-height="none"
+                  data-whitespace="nowrap"
+                  data-transform_idle="o:1;s:500"
+                  data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
+                  data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
+                  data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                  data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                  data-start="1000" 
+                  data-splitin="none" 
+                  data-splitout="none" 
+                  data-responsive_offset="on"
+                  style="z-index: 7; white-space: nowrap; font-weight:600;">Traitements selon les normes de l’ISFESO
+                </div>
+
+                <!-- LAYER NR. 3 -->
+                <div class="tp-caption tp-resizeme text-white text-right" 
+                  id="rs-3-layer-3"
+
+                  data-x="['right']"
+                  data-hoffset="['35']"
+                  data-y="['middle']"
+                  data-voffset="['30']"
+                  data-fontsize="['16','13']"
+                  data-lineheight="['28']"
+                  data-width="none"
+                  data-height="none"
+                  data-whitespace="nowrap"
+                  data-transform_idle="o:1;s:500"
+                  data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
+                  data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
+                  data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                  data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                  data-start="1400" 
+                  data-splitin="none" 
+                  data-splitout="none" 
+                  data-responsive_offset="on"
+                  style="z-index: 5; white-space: nowrap; letter-spacing:0px; font-weight:400;">L’application des normes de l’ISFESO permet de meilleur résultat que cela soit pendant le traitement ou post-traitement.
+                </div>
+
+                <!-- LAYER NR. 4 -->
+                <div class="tp-caption tp-resizeme" 
+                  id="rs-3-layer-4"
+
+                  data-x="['right']"
+                  data-hoffset="['35']"
+                  data-y="['middle']"
+                  data-voffset="['95']"
+                  data-width="none"
+                  data-height="none"
+                  data-whitespace="nowrap"
+                  data-transform_idle="o:1;"
+                  data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
+                  data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+                  data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" 
+                  data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                  data-start="1400" 
+                  data-splitin="none" 
+                  data-splitout="none" 
+                  data-responsive_offset="on"
+                  style="z-index: 5; white-space: nowrap; letter-spacing:1px;"><a class="btn btn-colored btn-lg btn-flat btn-theme-colored btn-theme-colored border-right-theme-color-2-6px pl-20 pr-20" href="">Voir les cas cliniques</a> 
+                </div>
+              </li>
+
+            </ul>
+          </div>
+          <!-- end .rev_slider -->
+        </div>
+        <!-- end .rev_slider_wrapper -->
+        <script>
+          $(document).ready(function(e) {
+            $(".rev_slider").revolution({
+              sliderType:"standard",
+              sliderLayout: "auto",
+              dottedOverlay: "none",
+              delay: 5000,
+              navigation: {
+                  keyboardNavigation: "off",
+                  keyboard_direction: "horizontal",
+                  mouseScrollNavigation: "off",
+                  onHoverStop: "off",
+                  touch: {
+                      touchenabled: "on",
+                      swipe_threshold: 75,
+                      swipe_min_touches: 1,
+                      swipe_direction: "horizontal",
+                      drag_block_vertical: false
+                  },
+                arrows: {
+                  style:"zeus",
+                  enable:true,
+                  hide_onmobile:true,
+                  hide_under:600,
+                  hide_onleave:true,
+                  hide_delay:200,
+                  hide_delay_mobile:1200,
+                  tmp:'<div class="tp-title-wrap">    <div class="tp-arr-imgholder"></div> </div>',
+                  left: {
+                    h_align:"left",
+                    v_align:"center",
+                    h_offset:30,
+                    v_offset:0
+                  },
+                  right: {
+                    h_align:"right",
+                    v_align:"center",
+                    h_offset:30,
+                    v_offset:0
+                  }
+                },
+              },
+              responsiveLevels: [1240, 1024, 778],
+              visibilityLevels: [1240, 1024, 778],
+              gridwidth: [1170, 1024, 778, 480],
+              gridheight: [650, 768, 960, 720],
+              lazyType: "none",
+              parallax: {
+                  origo: "slidercenter",
+                  speed: 1000,
+                  levels: [5, 10, 15, 20, 25, 30, 35, 40, 45, 46, 47, 48, 49, 50, 100, 55],
+                  type: "scroll"
+              },
+              shadow: 0,
+              spinner: "off",
+              stopLoop: "on",
+              stopAfterLoops: 0,
+              stopAtSlide: -1,
+              shuffle: "off",
+              autoHeight: "off",
+              fullScreenAutoWidth: "off",
+              fullScreenAlignForce: "off",
+              fullScreenOffsetContainer: "",
+              fullScreenOffset: "0",
+              hideThumbsOnMobile: "off",
+              hideSliderAtLimit: 0,
+              hideCaptionAtLimit: 0,
+              hideAllCaptionAtLilmit: 0,
+              debugMode: false,
+              fallbacks: {
+                  simplifyAll: "off",
+                  nextSlideOnWindowFocus: "off",
+                  disableFocusListener: false,
+              }
+            });
+          });
+        </script>
+        <!-- Slider Revolution Ends -->
+
+      </div>
+    </section>
+
+   
+    <section>
+      <div class="container">
+        <div class="section-content">
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-3 pb-sm-20 ">
+              <h2 class="line-bottom font-20 text-theme-colored text-uppercase mb-10 mt-0"><span class="text-theme-color-2"> L’ISFESO</span> c’est quoi exactement </h2>
+              {# <p class="lead font-18">We care for children, protect their welfare, and prepare them for the future</p> #}
+              <p>L'ISFESO (International Society Of Functional Esthetic Of Smile In Orthodontics) est une société scientifique regroupant des orthodontistes qui a pour but d'étudier et promouvoir l'Orthodontie Esthétique et Fonctionnelle du Sourire au service de l'orthodontie et du sourire pour recréer une occlusion fonctionnelle, limitant les extraction "orthodontiques" à partir de l'étude de votre sourire "du visage" et "des dents" résumé à travers les 7 articles sur le sourire écrits par Patrice Bergeyron aussi bien au niveau de son diagnostic, son plan de traitement que des appareillages, qui respectent votre individualité, votre schéma corporel, vos désirs et le vieillissement de votre visage.</p>
+              <a class="btn btn-colored btn-theme-colored btn-sm" href="{{ path('articles') }}" target="_blank">Lire les articles</a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 pb-sm-20">
+              <div class="image-box-thum">
+                <img class="img-fullwidth" alt="" src="images/about/ss1.jpg">
+              </div>
+              <div class="image-box-details pt-20 pb-sm-20">
+                <h4 class="title text-uppercase line-bottom mt-0">Comprendre L’OEFS </h4>
+                <p class="desc mb-10">De plus qu’un traitement invisible et donc esthétique, L’OEFS ( L'orthodontie Esthétique Fonctionnelle de sourire© ) se veut de donner à tout traitement un aspect sans douleur ni trauma, le but étant de faire vivre au patient un traitement qui en oublie même l’existence que cela soit sur un plan psychologique ou physique.</p>
+                <a href="{{ path('oefs') }}" target="_blank" class="btn btn-xs btn-theme-colored">Le But de l’OEFS</a>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 pb-sm-20">
+              <div class="image-box-thum">
+                <img class="img-fullwidth" alt="" src="images/about/ss2.jpg">
+              </div>
+              <div class="image-box-details pt-20 pb-sm-20">
+                <h4 class="title text-uppercase line-bottom mt-0">Charte de l’ISFESO </h4>
+                <p class="desc mb-10">Chaque membre souhaitant intégré cette société scientifique se doivent de signer une charte qui prescrit les règles et fondements de l’ISFESO. </p>
+                <a href="{{ path('charte_isfeso') }}" target="_blank" class="btn btn-xs btn-theme-colored">La Charte</a>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="image-box-thum">
+                <img class="img-fullwidth" alt="" src="images/about/ss3.jpg">
+              </div>
+              <div class="image-box-details pt-20 pb-sm-20">
+                <h4 class="title text-uppercase line-bottom mt-0">Nos Formations</h4>
+                <p class="desc mb-10"><b>Profitez de la dernière formation inédite du Dr Patrice Bergeyron sur Youtube en</b> « Alignement dentaire par l’orthodontie invisible » suivie à travers le monde par ses pairs orthodontistes et médecins dentistes.</p>
+                <a href="https://www.youtube.com/watch?v=6lx_yocUhj4" target="_blank" class="btn btn-xs btn-theme-colored">Voir la formation </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="bg-lighter">
+      <div class="container">
+        <div class="section-title">
+          <div class="row">
+            <div class="col-md-12">
+              <h2 class="text-uppercase text-theme-colored font line-bottom line-height-1 mt-0 mb-0"><span class="text-theme-color-2 font-weight-400">Les 6 clés de la réussite </span>d’un traitement d’orthodontie esthétique et fonctionnelle</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row mtli-row-clearfix">
+          <div class="col-xs-12 col-sm-6 col-md-4" data-toggle="modal" data-target="#modallg1" style="cursor: pointer">
+            <div class="icon-box iconbox-theme-colored bg-white p-15 mb-30 border-1px">
+              <a class="icon icon-dark border-left-theme-color-2-3px pull-left flip mb-0 mr-0 mt-5" >
+                <i class="pe-7s-scissors"></i>
+              </a>
+              <div class="icon-box-details">
+                <h4 class="icon-box-title font-16 font-weight-600" >Consultation personnalisée</h4>
+              </div>
+            </div>    
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4" data-toggle="modal" data-target="#modallg2" style="cursor: pointer">
+            <div class="icon-box iconbox-theme-colored bg-white p-15 mb-30 border-1px">
+              <a class="icon icon-dark border-left-theme-color-2-3px pull-left flip mb-0 mr-0 mt-5" >
+                <i class="pe-7s-pen"></i>
+              </a>
+              <div class="icon-box-details">
+                <h4 class="icon-box-title font-16 font-weight-600" >Diagnostique</h4>
+              </div>
+            </div>    
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4" data-toggle="modal" data-target="#modallg3" style="cursor: pointer">
+            <div class="icon-box iconbox-theme-colored bg-white p-15 mb-30 border-1px">
+              <a class="icon icon-dark border-left-theme-color-2-3px pull-left flip mb-0 mr-0 mt-5" >
+                <i class="pe-7s-tools"></i>
+              </a>
+              <div class="icon-box-details">
+                <h4 class="icon-box-title font-16 font-weight-600" >Proposition de traitement ou de changement </h4>
+              </div>
+            </div>    
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4" data-toggle="modal" data-target="#modallg4" style="cursor: pointer">
+            <div class="icon-box iconbox-theme-colored bg-white p-15 mb-sm-30 border-1px">
+              <a class="icon icon-dark border-left-theme-color-2-3px pull-left flip mb-0 mr-0 mt-5" >
+                <i class="pe-7s-vector"></i>
+              </a>
+              <div class="icon-box-details">
+                <h4 class="icon-box-title font-16 font-weight-600" >Règles et choix d’appareillages </h4>
+              </div>
+            </div>    
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4" data-toggle="modal" data-target="#modallg5" style="cursor: pointer">
+            <div class="icon-box iconbox-theme-colored bg-white p-15 border-1px">
+              <a class="icon icon-dark border-left-theme-color-2-3px pull-left flip mb-0 mr-0 mt-5" >
+                <i class="pe-7s-phone"></i>
+              </a>
+              <div class="icon-box-details">
+                <h4 class="icon-box-title font-16 font-weight-600" >Consentement éclairé et suivi du patient  </h4>
+              </div>
+            </div>    
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4" data-toggle="modal" data-target="#modallg6" style="cursor: pointer">
+            <div class="icon-box iconbox-theme-colored bg-white p-15 border-1px">
+              <a class="icon icon-dark border-left-theme-color-2-3px pull-left flip mb-0 mr-0 mt-5" >
+                <i class="pe-7s-light"></i>
+              </a>
+              <div class="icon-box-details">
+                <h4 class="icon-box-title font-16 font-weight-600" >Maintien et entretien de votre sourire</h4>
+              </div>
+            </div>    
+          </div>
+        </div>
+      </div>
+    </section>
+
+   <section >
+     <div class="section-title">
+       
+      <div class="container">
+       <div class="row">
+          <div class="col-md-12 pt-50 pb-50">
+                      <h2 class="text-uppercase line-bottom line-height-1 mt-0 mb-0 ">Formations<span class="text-theme-color-2 font-weight-400"> à venir </span></h2>
+                  <br><h2 class="text-uppercase  mt-0 mb-0 text-theme-color-2 font-weight-600" style="Text-align: CENTER;">L'Orthodontie du sourire</h2>
+          
+         </div>
+        </div>
+       
+        {# <div class="row">
+            <div class="col-md-7">
+              <img class="pull-left mr-15 thumbnail" src="{{ asset('images/project/formation14.png') }}" alt="" >
+            </div>
+
+            <div class="col-md-5"> 
+            <p style="text-align: justify;"><b><i class="fa fa-hand-o-right"></i> Alignement Dentaire par l'Orthodontie Invisible </b><br>
+            <i class="fa fa-hand-o-right"></i> Lundi 04 mai 2020 (17h Heure de Paris)  <br>
+                  L'équipe B And Smile a l'honneur de vous convier à notre conférence sur La Révolution des Aligneurs Orthodontiques & Dentisterie Numérique tenue par le DR PATRICE BERGEYRON le Lundi 04 mai 2020 à 17H (Heure de Paris). 
+                  Soyez au rendez-vous en cliquant sur le lien affiché ci-dessous. <br>
+                  <a class="btn btn-dark btn-theme-colored btn-sm text-uppercase mt-10" href="https://us02web.zoom.us/webinar/register/WN_LvdYYbHLSZSfmr4hlgKfDQ" target="blank">En savoir plus</a><br>
+                  </p>
+            
+              <img class="pull-left mr-15 thumbnail" src="{{ asset('images/logo-bas-formation.png') }}" alt="" >
+            </div> 
+
+          </div>
+        </div> #}
+        <div class="row" >
+            <div class="col-sm-12" >
+                  <h3 class=" font-weight-800" style="Text-align: CENTER;">Apprenez l'excellence en Orthodontie grâce à une formation complète en 44 modules</h3>
+            </div>
+          {# <div class="col-sm-2" ></div>
+          <div class="col-sm-8" >
+            <iframe src="https://drive.google.com/file/d/1O3G8kNUrSYEUOmwAQGFgQXoYLqnefPLs/preview" width="640" height="580"></iframe>
+            <br><br>
+          </div>
+          <div class="col-sm-2" ></div> #}
+      </div>
+
+      <div class="row">
+            <div class="col-md-4 sm-4">
+              <div class="service-block bg-lighter">
+                <div class="thumb">
+                  <img alt="featured project" src="images/project/adulte.jpg" class="img-fullwidth">
+                </div>
+                <div class="formation-cadre content text-left flip p-25 pt-0 pb-40">
+                    <h4 class="formation-title mb-10"><b>FORMATION</b><br>ORTHODONTIE ADULTE </h4>
+                    {# <ul class="list-icon">
+                      <li>
+                        <i class="fa fa-clock-o"></i>29 Novembre 2019
+                      </li>
+                      <li>
+                        <i class="fa fa-hand-o-right"></i>INTERNATIONAL MASTERCLASS INVISALIGN à Genève
+                      </li>
+                      <li>
+                        <i class="fa fa-hand-o-right"></i>Deux Intervenants : Dr. Jalil Chraibi et Dr. Adel Ben Amor
+                      </li>
+                      <li>
+                        <i class="fa fa-hand-o-right"></i>Clinique B And Smile , Chantepoulet 7, 1201 Genève
+                      </li>
+                    </ul> #}
+                                    {# 
+                    <a class="btn btn-dark btn-theme-colored btn-sm text-uppercase mt-10" href="#">Voir details</a> #}
+                  
+                    <div id="accordion1" class="panel-group accordion">
+                      <div class="panel">
+                        <div class="panel-title"> <a data-parent="#accordion1" data-toggle="collapse" href="#accordion11" class="" aria-expanded="true"> <span class="open-sub"></span>1er degré : Bases Fondamentales</a> </div>
+                        <div id="accordion11" class="panel-collapse collapse" role="tablist" aria-expanded="true">
+                          <div class="panel-content">
+                            <p>1. Notions de base de L’Orthodontie Adulte <br>
+                            2. Diagnostic Orthodontique Adulte selon l’OEFS <br>
+                            3. Traitements Orthodontiques Adulte selon OEFS
+                            
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel">
+                        <div class="panel-title"> <a class="collapsed" data-parent="#accordion1" data-toggle="collapse" href="#accordion12" aria-expanded="false"> <span class="open-sub"></span>2ème degré : Alignement Dentaire et SMILERS®</a> </div>
+                        <div id="accordion12" class="panel-collapse collapse" role="tablist" aria-expanded="false" style="height: 0px;">
+                          <div class="panel-content">
+                            <p>1. Les Protocoles Smilers Ortho®<br>
+                            2. La Smilers Stories : Séances Interactives <br>
+                            3. La classe I DDM Avec Smilers Ortho®<br>
+                            4. Stripping Avec Smilers Ortho®<br>
+                            5. Finition et Auxillaires avec Smilers Ortho® 
+                            </p>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="panel">
+                        <div class="panel-title"> <a class="collapsed" data-parent="#accordion1" data-toggle="collapse" href="#accordion13" aria-expanded="false"> <span class="open-sub"></span>3ème degré : Orthodontie et SMILERS®</a> </div>
+                        <div id="accordion13" class="panel-collapse collapse" role="tablist" aria-expanded="false" style="height: 0px;">
+                          <div class="panel-content">
+                            <p>1. Traitement des classe II et classe II/1 Avec Smilers Ortho®<br>
+                            2. Traitement des classe III Avec Smilers Ortho®<br>
+                            3. Mini-vis et Smilers Ortho® <br>
+                            4. Laser et Smilers Ortho® <br>
+                            5. Traitement des Dents Incluses Avec Smilers Ortho®<br>
+                             6. Contention et maintien
+                            </p>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="panel">
+                        <div class="panel-title"> <a class="collapsed" data-parent="#accordion1" data-toggle="collapse" href="#accordion14" aria-expanded="false"> <span class="open-sub"></span>4ème degré : Cas Extrêmes et SMILERS®</a> </div>
+                        <div id="accordion14" class="panel-collapse collapse" role="tablist" aria-expanded="false" style="height: 0px;">
+                          <div class="panel-content">
+                            <p>
+
+                            1. Blanchiment des Dents<br>
+
+                            2. Management des plans ortho-prothétiques et Smilers Ortho®<br>
+
+                            3. Management des traitements ORTHO /IMPLANTO<br>
+
+                            4. Traitements ORTHO/ PARO avec Smilers Ortho® Ingression et Egression<br>
+
+                            5. Traitement des Troubles articulaires avec Smilers Ortho®<br>
+
+                            6. Traitements Ortho-chirurgicaux avec Smilers Ortho® et sans Blocage<br>
+
+                            
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="formation-button-inscription">
+                      <a class="btn btn-dark btn-theme-colored btn-sm text-uppercase mt-10 inscription-link"  href="{{ path('InscriptionFormation') }}" >inscrivez vous</a>  
+                    </div>
+                </div>
+              </div>
+            </div>
+
+             <div class="col-md-4 sm-4">
+              <div class="service-block bg-lighter">
+                <div class="thumb">
+                  <img alt="featured project" src="images/project/enfant.jpg" class="img-fullwidth">
+                </div>
+                <div class="formation-cadre content text-left flip p-25 pt-0 pb-40">
+                    <h4 class="formation-title mb-10"><b>FORMATION</b><br>ORTHODONTIE ENFANTS</h4>
+                    {# <ul class="list-icon">
+                      <li>
+                        <i class="fa fa-clock-o"></i>29 Novembre 2019
+                      </li>
+                      <li>
+                        <i class="fa fa-hand-o-right"></i>INTERNATIONAL MASTERCLASS INVISALIGN à Genève
+                      </li>
+                      <li>
+                        <i class="fa fa-hand-o-right"></i>Deux Intervenants : Dr. Jalil Chraibi et Dr. Adel Ben Amor
+                      </li>
+                      <li>
+                        <i class="fa fa-hand-o-right"></i>Clinique B And Smile , Chantepoulet 7, 1201 Genève
+                      </li>
+                    </ul> #}
+                                    {# 
+                    <a class="btn btn-dark btn-theme-colored btn-sm text-uppercase mt-10" href="#">Voir details</a> #}
+                  
+                    <div id="accordion2" class="panel-group accordion">
+                      <div class="panel">
+                        <div class="panel-title"> <a data-parent="#accordion2" data-toggle="collapse" href="#accordion15" class="" aria-expanded="true"> <span class="open-sub"></span>1er degré : Le RCC®</a> </div>
+                        <div id="accordion15" class="panel-collapse collapse" role="tablist" aria-expanded="true">
+                          <div class="panel-content">
+                            <p>
+                            1. La Croissance et ses Conséquences sur l’âge et les appareillages<br>
+
+                            2. Diagnostic et plan de traitement assisté par ordinateur<br>
+                            3. Gestion administrative des devis et demandes aux organismes<br>
+                            4. Le Régulateur de croissance contrôlée© (RCC©)<br>
+                            5. Le Masque Orthopédique et La Fronde Mentonnière<br>
+                            6. Traitements ENFANTS OEFS de 3 à 6 ans<br>
+                            7. Traitements ENFANTS OEFS de 6 à 9 ans<br>
+                            8. La Surveillance<br>
+                            
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel">
+                        <div class="panel-title"> <a class="collapsed" data-parent="#accordion2" data-toggle="collapse" href="#accordion16" aria-expanded="false"> <span class="open-sub"></span>2ème degré : Smilers® Child</a> </div>
+                        <div id="accordion16" class="panel-collapse collapse" role="tablist" aria-expanded="false" style="height: 0px;">
+                          <div class="panel-content">
+                            <p>
+                            1. Smilers Ortho® CHILD et Blocs d’Eruption <br>
+                            2. Smilers Ortho® et Denture Définitive<br>
+                            3. La 2ème Molaire clé du succès et de la stabilité<br>
+                            4. Contention et DDS<br>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                     
+                    </div>
+                    <div class="formation-button-inscription">
+                      <a class="btn btn-dark btn-theme-colored btn-sm text-uppercase mt-10 inscription-link"  href="{{ path('InscriptionFormation') }}" >inscrivez vous</a>  
+                    </div>
+                </div>
+              </div>
+            </div>
+
+             <div class="col-md-4 sm-4">
+              <div class="service-block bg-lighter">
+                <div class="thumb">
+                  <img alt="featured project" src="images/project/managment.jpg" class="img-fullwidth">
+                </div>
+                <div class="formation-cadre content text-left flip p-25 pt-0 pb-40">
+                    <h4 class="formation-title mb-10"><b>FORMATION</b><br>MANAGEMENT CABINET 100% DIGITAL</h4>
+                    {# <ul class="list-icon">
+                      <li>
+                        <i class="fa fa-clock-o"></i>29 Novembre 2019
+                      </li>
+                      <li>
+                        <i class="fa fa-hand-o-right"></i>INTERNATIONAL MASTERCLASS INVISALIGN à Genève
+                      </li>
+                      <li>
+                        <i class="fa fa-hand-o-right"></i>Deux Intervenants : Dr. Jalil Chraibi et Dr. Adel Ben Amor
+                      </li>
+                      <li>
+                        <i class="fa fa-hand-o-right"></i>Clinique B And Smile , Chantepoulet 7, 1201 Genève
+                      </li>
+                    </ul> #}
+                                    {# 
+                    <a class="btn btn-dark btn-theme-colored btn-sm text-uppercase mt-10" href="#">Voir details</a> #}
+                  
+                    <div id="accordion3" class="panel-group accordion">
+                      <div class="panel">
+                        <div class="panel-title"> <a data-parent="#accordion3" data-toggle="collapse" href="#accordion20" class="" aria-expanded="true"> <span class="open-sub"></span>Cabinet 100% Digital</a> </div>
+                        <div id="accordion20" class="panel-collapse collapse" role="tablist" aria-expanded="true">
+                          <div class="panel-content">
+                            <p>
+                            1. Le Cabinet 100% Digita <br>
+                            2. Procédures et Protocoles Informatisés<br>
+                            3. Tableaux de Bords<br>
+                            4. Gestion du personnel<br> 
+                            5. Tarifs et Paiements<br>
+
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel">
+                        <div class="panel-title"> <a class="collapsed" data-parent="#accordion3" data-toggle="collapse" href="#accordion21" aria-expanded="false"> <span class="open-sub"></span>Communication by Patrice Bergeyron</a> </div>
+                        <div id="accordion21" class="panel-collapse collapse" role="tablist" aria-expanded="false" style="height: 0px;">
+                          <div class="panel-content">
+                            <p>
+                            1. Les dépliants ISFESO<br>
+                            2. Les diaporamas et vidéos ISFESO<br>
+                            3. Internet et accès<br>
+                            4. Communication en Interne<br> 
+                            5. Communication en Externe<br>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel">
+                        <div class="panel-title"> <a class="collapsed" data-parent="#accordion3" data-toggle="collapse" href="#accordion22" aria-expanded="false"> <span class="open-sub"></span>Publication by Patrice Bergeyron </a> </div>
+                        <div id="accordion22" class="panel-collapse collapse" role="tablist" aria-expanded="false" style="height: 0px;">
+                          <div class="panel-content">
+                            <p>
+                             1. Présentation de Mémoire de Fin de Cycle<br>
+                            2. Présentation de Cas Cliniques </p>
+                          </div>
+                        </div>
+                      </div>
+                    
+                    </div>
+                    <div class="formation-button-inscription">
+                      <a class="btn btn-dark btn-theme-colored btn-sm text-uppercase mt-10 inscription-link"  href="{{ path('InscriptionFormation') }}" >inscrivez vous</a>  
+                    </div>
+                </div>
+              </div>
+            </div>      
+      </div>
+      <div class="row pdflink">
+          <b><a href="http://isfeso.com/images/fichier-formation-final.pdf" target="blank" style="color: #f2184f !important;"> vous pouvez télécharger le programme complet en cliquant ici</a>
+          </b><br><br><br>
+      </div>
+      </div>
+    </section>
+    <!-- Section: COURSES -->
+    {# <section class="">
+      <div class="container pb-40">
+        <div class="section-title">
+        <div class="row">
+          <div class="col-md-8">
+            <h2 class="text-uppercase line-bottom line-height-1 mt-0 mb-0 ">Nos <span class="text-theme-color-2 font-weight-400">Formations</span></h2>
+         </div>
+        </div>
+        </div>
+        <div class="section-content">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="owl-carousel-3col">
+                <div class="item ">
+                  <div class="service-block bg-lighter">
+                    <div class="thumb"> <img alt="featured project" src="images/project/29nov.png" class="img-fullwidth">
+                    
+                    </div>
+                    <div class="content text-left flip p-25 pt-0">
+                      <h4 class="line-bottom mb-10">Formation Intensive - Genève, Suisse</h4>
+                      <ul class="list-icon">
+                        <li><i class="fa fa-clock-o"></i>29 Novembre 2019</li>
+                        <li><i class="fa fa-hand-o-right"></i>INTERNATIONAL MASTERCLASS INVISALIGN à Genève</li>
+                        <li><i class="fa fa-hand-o-right"></i>Deux Intervenants : Dr. Jalil Chraibi et Dr. Adel Ben Amor</li>
+                        <li><i class="fa fa-hand-o-right"></i>Clinique B And Smile , Chantepoulet 7, 1201 Genève</li>
+                      </ul>
+                     <a class="btn btn-dark btn-theme-colored btn-sm text-uppercase mt-10" href="#">Voir details</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="service-block bg-lighter">
+                    <div class="thumb"> <img alt="featured project" src="images/project/geneve-suisse.png" class="img-responsive img-fullwidth">
+                    
+                    </div>
+                    <div class="content text-left flip p-25 pt-0">
+                      <h4 class="line-bottom mb-10">Formation Intensive - Genève, Suisse</h4>
+                      <ul class="list-icon">
+                        <li><i class="fa fa-clock-o"></i>27 Septembre 2019</li>
+                        <li><i class="fa fa-hand-o-right"></i>Conférence d’Orthodontie Pédiatrique dès l’âge dès 3 ans et Rééducation Linguale à Genève</li>
+                        <li><i class="fa fa-hand-o-right"></i>Deux Intervenants : Dr. Patrice Bergeyron et Dr. Patrick Fellus</li>
+                        <li><i class="fa fa-hand-o-right"></i>Clinique B And Smile , Chantepoulet 7, 1201 Genève</li>
+                      </ul>
+                     <a class="btn btn-dark btn-theme-colored btn-sm text-uppercase mt-10" href="#">Voir details</a>
+                   </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="service-block bg-lighter">
+                    <div class="thumb"> <img alt="featured project" src="images/project/ile-maurice.png" class="img-responsive img-fullwidth">
+                    
+                    </div>
+                    <div class="content text-left flip p-25 pt-0">
+                      <h4 class="line-bottom mb-10">Formation Intensive - L'Île Maurice</h4>
+                      <ul class="list-icon">
+                        <li><i class="fa fa-clock-o"></i>23 Septembre 2019</li>
+                        <li><i class="fa fa-hand-o-right"></i>Invisalign Master Class</li>
+                        <li><i class="fa fa-hand-o-right"></i>Deux Intervenants : Dr. Jalil Chraibi et Dr. Adel Ben Amor</li>
+                        <li><i class="fa fa-hand-o-right"></i>Hôtel Hilton Flic en Flac</li>
+                      </ul>
+                     <a class="btn btn-dark btn-theme-colored btn-sm text-uppercase mt-10" href="#">Voir details</a>
+                   </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="service-block bg-lighter">
+                    <div class="thumb"> <img alt="featured project" src="images/project/ile-djerba.png" class="img-responsive img-fullwidth">
+                    
+                    </div>
+                    <div class="content text-left flip p-25 pt-0">	
+                      <h4 class="line-bottom mb-10">Formation Intensive - Djerba, Tunisie</h4>
+                      <ul class="list-icon">
+                        <li><i class="fa fa-clock-o"></i>03 Juillet 2019</li>
+                        <li><i class="fa fa-hand-o-right"></i>Formation Invisalign® - Les secrets de la Classe II</li>
+                        <li><i class="fa fa-hand-o-right"></i>Intervenant : Dr. Patrice Bergeyron</li>
+                        <li><i class="fa fa-hand-o-right"></i>Club Med Djerba, Tunisie</li>
+                      </ul>
+                      <a class="btn btn-dark btn-theme-colored btn-sm text-uppercase mt-10" href="#">Voir details</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="service-block bg-lighter">
+                    <div class="thumb"> <img alt="featured project" src="images/project/marrakech.png" class="img-responsive img-fullwidth">
+                    
+                    </div>
+                    <div class="content text-left flip p-25 pt-0">
+                      <h4 class="line-bottom mb-10">Formation Intensive - Marrakech, Maroc</h4>
+                      <ul class="list-icon">
+                        <li><i class="fa fa-clock-o"></i>02 Juillet 2019</li>
+                        <li><i class="fa fa-hand-o-right"></i>Cycle de Formation & Expertise en Invisalign®</li>
+                        <li><i class="fa fa-hand-o-right"></i>Plusieurs Intervenants</li>
+                        <li><i class="fa fa-hand-o-right"></i>Club Med Marrakech, Maroc</li>
+                      </ul>
+                      <a class="btn btn-dark btn-theme-colored btn-sm text-uppercase mt-10" href="#">Voir details</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> #}
+
+
+    <!-- Section: Gallery -->
+    <section id="gallery" class="bg-lighter">
+     <div class="container">
+        <div class="section-title">
+          <div class="row">
+            <div class="col-md-12">
+              <h2 class="text-uppercase text-theme-colored title line-bottom line-height-1 mt-0 mb-0">Notre<span class="text-theme-color-2 font-weight-400"> Galerie</span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="section-content">
+          <div class="row">
+            <div class="col-md-12">
+              <!-- Works Filter -->
+              {# <div class="portfolio-filter font-alt align-center">
+                <a href="#" class="active" data-filter="*">All</a>
+                <a href="#select1" class="" data-filter=".select1">Photos</a>
+                <a href="#select2" class="" data-filter=".select2">Campus</a>
+                <a href="#select3" class="" data-filter=".select3">Students</a>
+              </div> #}
+              <!-- End Works Filter -->
+              
+              <!-- Portfolio Gallery Grid -->
+              <div id="grid" class="gallery-isotope grid-3 gutter clearfix">
+                <!-- Portfolio Item Start -->
+                <div class="gallery-item select1">
+                  <div class="thumb">
+                    <img class="img-fullwidth" src="{{ asset('images/galerie-photo/dakar.jpg') }}" alt="project">
+                    <div class="overlay-shade"></div>
+                    <div class="icons-holder">
+                      <div class="icons-holder-inner">
+                        <div class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
+                          <a data-lightbox="image" href="{{ asset('images/galerie-photo/dakar.jpg') }}"><i class="fa fa-plus"></i></a>
+                          
+                        </div>
+                      </div>
+                    </div>
+                    <a class="hover-link" data-lightbox="image" href="{{ asset('images/galerie-photo/dakar.jpg') }}">View more</a>
+                  </div>
+                </div>
+                <!-- Portfolio Item End -->
+
+                <!-- Portfolio Item Start -->
+                <div class="gallery-item select1">
+                  <div class="thumb">
+                    <img class="img-fullwidth" src="{{ asset('images/galerie-photo/djerba.jpg') }}" alt="project">
+                    <div class="overlay-shade"></div>
+                    <div class="icons-holder">
+                      <div class="icons-holder-inner">
+                        <div class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
+                          <a data-lightbox="image" href="{{ asset('images/galerie-photo/djerba.jpg') }}"><i class="fa fa-plus"></i></a>
+                          <a href="#"><i class="fa fa-link"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="hover-link" data-lightbox="image" href="{{ asset('images/galerie-photo/djerba.jpg') }}">View more</a>
+                  </div>
+                </div>
+                <!-- Portfolio Item End -->
+
+                <!-- Portfolio Item Start -->
+                <div class="gallery-item select2">
+                  <div class="thumb">
+                    <img class="img-fullwidth" src="{{ asset('images/galerie-photo/geneve.jpg') }}" alt="project">
+                    <div class="overlay-shade"></div>
+                    <div class="icons-holder">
+                      <div class="icons-holder-inner">
+                        <div class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
+                          <a data-lightbox="image" href="{{ asset('images/galerie-photo/geneve.jpg') }}"><i class="fa fa-plus"></i></a>
+                          <a href="#"><i class="fa fa-link"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="hover-link" data-lightbox="image" href="{{ asset('images/galerie-photo/geneve.jpg') }}">View more</a>
+                  </div>
+                </div>
+                <!-- Portfolio Item End -->
+
+                <!-- Portfolio Item Start -->
+                <div class="gallery-item select3">
+                  <div class="thumb">
+                    <img class="img-fullwidth" src="{{ asset('images/galerie-photo/geneve2.jpg') }}" alt="project">
+                    <div class="overlay-shade"></div>
+                    <div class="icons-holder">
+                      <div class="icons-holder-inner">
+                        <div class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
+                          <a data-lightbox="image" href="{{ asset('images/galerie-photo/geneve2.jpg') }}"><i class="fa fa-plus"></i></a>
+                          <a href="#"><i class="fa fa-link"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="hover-link" data-lightbox="image" href="{{ asset('images/galerie-photo/geneve2.jpg') }}">View more</a>
+                  </div>
+                </div>
+                <!-- Portfolio Item End -->
+
+                <!-- Portfolio Item Start -->
+                <div class="gallery-item select1">
+                  <div class="thumb">
+                    <img class="img-fullwidth" src="{{ asset('images/galerie-photo/reunion.jpg') }}" alt="project">
+                    <div class="overlay-shade"></div>
+                    <div class="icons-holder">
+                      <div class="icons-holder-inner">
+                        <div class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
+                          <a data-lightbox="image" href="{{ asset('images/galerie-photo/reunion.jpg') }}"><i class="fa fa-plus"></i></a>
+                          <a href="#"><i class="fa fa-link"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="hover-link" data-lightbox="image" href="{{ asset('images/galerie-photo/reunion.jpg') }}">View more</a>
+                  </div>
+                </div>
+                <!-- Portfolio Item End -->
+
+                <!-- Portfolio Item Start -->
+                <div class="gallery-item select3">
+                  <div class="thumb">
+                    <img class="img-fullwidth" src="{{ asset('images/galerie-photo/reunion2.jpg') }}" alt="project">
+                    <div class="overlay-shade"></div>
+                    <div class="icons-holder">
+                      <div class="icons-holder-inner">
+                        <div class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
+                          <a data-lightbox="image" href="{{ asset('images/galerie-photo/reunion2.jpg') }}"><i class="fa fa-plus"></i></a>
+                          <a href="#"><i class="fa fa-link"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="hover-link" data-lightbox="image" href="{{ asset('images/galerie-photo/reunion2.jpg') }}">View more</a>
+                  </div>
+                </div>
+                <!-- Portfolio Item End -->
+
+                <!-- Portfolio Item Start -->
+                <div class="gallery-item select2">
+                  <div class="thumb">
+                    <img class="img-fullwidth" src="{{ asset('images/galerie-photo/tunis.jpg') }}" alt="project">
+                    <div class="overlay-shade"></div>
+                    <div class="icons-holder">
+                      <div class="icons-holder-inner">
+                        <div class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
+                          <a data-lightbox="image" href="{{ asset('images/galerie-photo/tunis.jpg') }}"><i class="fa fa-plus"></i></a>
+                          <a href="#"><i class="fa fa-link"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="hover-link" data-lightbox="image" href="{{ asset('images/galerie-photo/tunis.jpg') }}">View more</a>
+                  </div>
+                </div>
+                <!-- Portfolio Item End -->
+
+                <!-- Portfolio Item Start -->
+                <div class="gallery-item select3">
+                  <div class="thumb">
+                    <img class="img-fullwidth" src="{{ asset('images/galerie-photo/tunis2.jpg') }}" alt="project">
+                    <div class="overlay-shade"></div>
+                    <div class="icons-holder">
+                      <div class="icons-holder-inner">
+                        <div class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
+                          <a data-lightbox="image" href="{{ asset('images/galerie-photo/tunis2.jpg') }}"><i class="fa fa-plus"></i></a>
+                          <a href="#"><i class="fa fa-link"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="hover-link" data-lightbox="image" href="{{ asset('images/galerie-photo/tunis2.jpg') }}">View more</a>
+                  </div>
+                </div>
+                <!-- Portfolio Item End -->
+
+                <!-- Portfolio Item Start -->
+                <div class="gallery-item select1">
+                  <div class="thumb">
+                    <img class="img-fullwidth" src="{{ asset('images/galerie-photo/tunis3.jpg') }}" alt="project">
+                    <div class="overlay-shade"></div>
+                    <div class="icons-holder">
+                      <div class="icons-holder-inner">
+                        <div class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
+                          <a data-lightbox="image" href="{{ asset('images/galerie-photo/tunis3.jpg') }}"><i class="fa fa-plus"></i></a>
+                          <a href="#"><i class="fa fa-link"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="hover-link" data-lightbox="image" href="{{ asset('images/galerie-photo/tunis3.jpg') }}">View more</a>
+                  </div>
+                </div>
+                <!-- Portfolio Item End -->
+                
+              </div>
+              <!-- End Portfolio Gallery Grid -->
+            </div>
+          </div>
+        </div>
+      </div >
+    </section>
+    {% include 'modal/indexModal.html.twig' %}
+   {% endblock %}

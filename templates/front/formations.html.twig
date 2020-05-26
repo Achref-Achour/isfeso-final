@@ -1,0 +1,353 @@
+   {% extends ('layout/frontlayout.html.twig') %}
+   {% block body %} 
+
+   <style>
+        .col-centered {
+    float: none;
+    margin: 0 auto;
+}
+
+.carousel-control { 
+    width: 8%;
+    width: 0px;
+}
+.carousel-control.left,
+.carousel-control.right { 
+    margin-right: 40px;
+    margin-left: 32px; 
+    background-image: none;
+    opacity: 1;
+}
+.carousel-control > a > span {
+    color: white;
+	  font-size: 29px !important;
+}
+
+.carousel-col { 
+    position: relative; 
+    min-height: 1px; 
+    padding: 5px; 
+    float: left;
+ }
+
+ .active > div { display:none; }
+ .active > div:first-child { display:block; }
+
+/*xs*/
+@media (max-width: 767px) {
+  .carousel-inner .active.left { left: -50%; }
+  .carousel-inner .active.right { left: 50%; }
+	.carousel-inner .next        { left:  50%; }
+	.carousel-inner .prev		     { left: -50%; }
+  .carousel-col                { width: 50%; }
+	.active > div:first-child + div { display:block; }
+}
+
+/*sm*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .carousel-inner .active.left { left: -50%; }
+  .carousel-inner .active.right { left: 50%; }
+	.carousel-inner .next        { left:  50%; }
+	.carousel-inner .prev		     { left: -50%; }
+  .carousel-col                { width: 50%; }
+	.active > div:first-child + div { display:block; }
+}
+
+/*md*/
+@media (min-width: 992px) and (max-width: 1199px) {
+  .carousel-inner .active.left { left: -33%; }
+  .carousel-inner .active.right { left: 33%; }
+	.carousel-inner .next        { left:  33%; }
+	.carousel-inner .prev		     { left: -33%; }
+  .carousel-col                { width: 33%; }
+	.active > div:first-child + div { display:block; }
+  .active > div:first-child + div + div { display:block; }
+}
+
+/*lg*/
+@media (min-width: 1200px) {
+  .carousel-inner .active.left { left: -25%; }
+  .carousel-inner .active.right{ left:  25%; }
+	.carousel-inner .next        { left:  25%; }
+	.carousel-inner .prev		     { left: -25%; }
+  .carousel-col                { width: 25%; }
+	.active > div:first-child + div { display:block; }
+  .active > div:first-child + div + div { display:block; }
+	.active > div:first-child + div + div + div { display:block; }
+}
+
+.block {
+	width: 900px;
+	height: 900px;
+}
+
+   </style>
+     <!--Page Title-->
+    <section class="page-title" style="background-image:url(../assets/images/background/bg-page-title-16.jpg);">
+    	<div class="auto-container">
+        	<h1>Formations</h1>
+        </div>
+    </section>
+    
+    <section class="project-details style-Three">
+    	<div class="auto-container">
+        	<h3>Le Dr Patrice Bergeyron, consultant du centre Invisalign by B And Smile à Genève, un espace dédié à la recherche et à la pédagogie.</h3><br>
+            
+            <div class="row clearfix">
+            	
+                <div class="image-column col-md-8 col-sm-12 col-xs-12">
+                	<figure class="image-box"><img src="{{ asset('assets/images/pbconsultant1.jpg') }}" alt=""></figure>
+                </div>
+                
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <p>Le <b>Dr Patrice Bergeyron</b> est l’un des orthodontistes les plus expérimenté d’Europe en traitements par appareil Invisalign® mais aussi celui qui montre les meilleurs cas cliniques selon les pairs de l’orthodontie Invisalign® internationale.
+                    Orthodontiste, conférencier et consultant International en orthodontie sans bagues Invisalign ® de 3 à 90 ans en Orthodontie Esthétique et Fonctionnelle du Sourire©.</p>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="row clearfix">
+                
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                	<h3>ACADÉMIE Invisalign By B and Smile</h3>
+                    <p>« L’Expérience et la passion au service de l’exception » Patrice Bergeyron
+
+                    L’Académie propose différentes formations :
+                    Destinées aux médecin-dentistes et orthodontistes désirant se perfectionner ou apprendre l’Orthodontie du Sourire, les appareillages Invisalign® et le Régulateur de Croissance Contrôlé®, le management numérique et Digital du cabinet d’orthodontie.
+
+                    Pour toute demande d'information veuillez nous contacter aux adresses mail suivantes:</p>
+                    
+                    <ul class="styled-list-one">
+                    	<li>training@basmile.com</li>
+                        <li>formation@basmile.com</li>
+                    </ul>
+                    
+                </div>
+            	
+                <div class="image-column col-md-6 col-sm-6 col-xs-12">
+                	<figure class="image-box"><img src="{{ asset('assets/images/formationbas.jpg') }}" alt=""></figure>
+                </div>
+                
+            </div>
+            
+            
+        </div>
+    </section>
+
+   <!--Blog News Section-->
+    <section class="blog-news-section latest-news">
+    	<div class="auto-container">
+        	
+            <div class="sec-title text-center">
+                <h2>Les formations antérieures</h2>
+                <h3>By B And Smile® Academy</h3>
+            </div>
+        	<div class="row clearfix">
+                
+                <!--News Column-->
+                <div class="column blog-news-column col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                	<article class="inner-box wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                		<figure class="image-box">
+                        	<a href="#"><img src="{{ asset('assets/images/geneve-suisse.jpg') }}" alt=""></a>
+                            <div class="news-date">27<span class="month">Sep</span></div>
+                        </figure>
+                        <div class="content-box">
+                        	<h3><a href="#">Formation Intensive - Geneve, Suisse</a></h3>
+                            <ul class="post-info clearfix">
+                                <li>27 Septembre 2019</li>
+                            </ul>
+                            <div class="text">
+                            - Conférence d’Orthodontie Pédiatrique dès l’âge dès 3 ans et Rééducation Linguale à Genève<br>
+                            - Deux Intervenants : Dr. Patrice Bergeyron et Dr. Patrick Fellus<br>
+                            - Clinique B And Smile , Chantepoulet 7, 1201 Genève</div>
+                        </div>
+                    </article>
+                </div>
+                
+                <!--News Column-->
+                <div class="column blog-news-column col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                	<article class="inner-box wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
+                		<figure class="image-box">
+                        	<a href="#"><img src="{{ asset('assets/images/ile-maurice.jpg') }}" alt=""></a>
+                            <div class="news-date">23<span class="month">Sep</span></div>
+                        </figure>
+                        <div class="content-box">
+                        	<h3><a href="#">Formation Intensive - L'Île Maurice</a></h3>
+                            <ul class="post-info clearfix">
+                                <li>23 Septembre 2019</li>
+                            </ul>
+                            <div class="text">- Invisalign Master Class<br>
+                            - Deux Intervenants : Dr. Jalil Chraibi et Dr. Adel Ben Amor<br>- Hôtel Hilton Flic en Flac</div>
+                        </div>
+                    </article>
+                </div>
+                
+                <!--News Column-->
+                <div class="column blog-news-column col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                	<article class="inner-box wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                		<figure class="image-box">
+                        	<a href="#"><img src="{{ asset('assets/images/ile-djerba.jpg') }}" alt=""></a>
+                            <div class="news-date">03<span class="month">Juill</span></div>
+                        </figure>
+                        <div class="content-box">
+                        	<h3><a href="#">Formation Intensive - Djerba, Tunisie</a></h3>
+                            <ul class="post-info clearfix">
+                                <li>03 Juillet 2019</li>
+                            </ul>
+                            <div class="text">
+                            - Formation Invisalign® - Les secrets de la Classe II<br>
+                            - Intervenant : Dr. Patrice Bergeyron<br>
+                            - Club Med Djerba, Tunisie</div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="row clearfix">   
+                <!--News Column-->
+                <div class="column blog-news-column col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                	<article class="inner-box wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                		<figure class="image-box">
+                        	<a href="#"><img src="{{ asset('assets/images/marrakech.jpg') }}" alt=""></a>
+                            <div class="news-date">02<span class="month">Juill</span></div>
+                        </figure>
+                        <div class="content-box">
+                        	<h3><a href="#">Formation Intensive - Marrakech, Maroc</a></h3>
+                            <ul class="post-info clearfix">
+                                <li>02 Juillet 2019</li>
+                            </ul>
+                            <div class="text">
+                            - Cycle de Formation & Expertise en Invisalign®<br>
+                            - Plusieurs Intervenants<br>
+                            - Club Med Marrakech, Maroc</div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Sponsors Section-->
+    <section class="sponsors-section">
+    	<div class="auto-container">
+        	
+            <div class="sec-title text-center">
+                <h2>Plusieurs formations et conférences</h2>
+                <p>« Smile training » sont proposées aux professionnels pour permettre à chacun d’actualiser ou de parfaire ses connaissances pour développer son cabinet avec les appareils Invisalign®, d’accroitre et de parfaire ses résultats en d’alignement grâce à l’expérience, aux logiciels et à la personnalisation de chaque plan de traitement.<br>
+                Les Diplômés de cette formation se verront offrir les meilleurs enseignements par un des Masters Invisalign®, afin d’acquérir l’autonomie et l’expertise nécessaires à la réussite de tous les traitements orthodontiques.</p>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-11 col-md-10 col-centered">
+
+                    <div id="carousel" class="carousel slide" data-ride="carousel" data-type="multi" data-interval="2500">
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <div class="carousel-col">
+                                    <div class="block red img-responsive">
+                                        <img src="{{ asset('assets/images/formations/for-gen.jpg') }}">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="carousel-col">
+                                    <div class="block red img-responsive">
+                                        <img src="{{ asset('assets/images/formations/1.png') }}">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="carousel-col">
+                                    <div class="block red img-responsive">
+                                        <img src="{{ asset('assets/images/formations/2.png') }}">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="carousel-col">
+                                    <div class="block red img-responsive">
+                                        <img src="{{ asset('assets/images/formations/3.png') }}">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="carousel-col">
+                                    <div class="block red img-responsive">
+                                        <img src="{{ asset('assets/images/formations/4.png') }}">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="carousel-col">
+                                    <div class="block red img-responsive">
+                                        <img src="{{ asset('assets/images/formations/5.png') }}">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="carousel-col">
+                                    <div class="block red img-responsive">
+                                        <img src="{{ asset('assets/images/formations/6.png') }}">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="carousel-col">
+                                    <div class="block red img-responsive">
+                                        <img src="{{ asset('assets/images/formations/7.png') }}">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="carousel-col">
+                                    <div class="block red img-responsive">
+                                        <img src="{{ asset('assets/images/formations/8.png') }}">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="carousel-col">
+                                    <div class="block red img-responsive">
+                                        <img src="{{ asset('assets/images/formations/9.png') }}">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="carousel-col">
+                                    <div class="block red img-responsive">
+                                        <img src="{{ asset('assets/images/formations/10.png') }}">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Controls -->
+                        <div class="left carousel-control">
+                            <a href="#carousel" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                        </div>
+                        <div class="right carousel-control">
+                            <a href="#carousel" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% endblock %}
+
+
+
+
+
+
+
+
+
+   
